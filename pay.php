@@ -4,10 +4,10 @@ require('includes/functions.php');
 require('includes/db_connection.php');
 
 
-// if (!isset($_GET['user']) || !isset($_GET['email']) || !isset($_GET['amount']) || !isset($_GET['firstname']) || !isset($_GET['lastname'])) {
-//   header('Location: index.php');
-//   exit(0);
-// }
+if (!isset($_GET['user']) || !isset($_GET['email']) || !isset($_GET['amount']) || !isset($_GET['firstname']) || !isset($_GET['lastname'])) {
+  header('Location: index.php');
+  exit(0);
+}
 
 $userId = $_GET['user'];
 $email = $_GET['email'];
@@ -29,9 +29,9 @@ $customer_email = $email;
 $currency = "NGN";
 $txref = $reference; //unique references for transaction.
 $PBFPubKey = $flutterWavePublicKey; //FlutterWave Public Key
-$redirect_url = $redirectUrl;
 // $first_name = 'Jude';
 // $last_name = 'Jonathan';
+$logo = $baseUrl . '/images/logo.png';
 $button = 'Donate';
 $title = 'VolunteerNG';
 
@@ -45,6 +45,7 @@ curl_setopt_array($curl, array(
     'customer_email' => $customer_email,
     'customer_firstname' => $first_name,
     'customer_lastname' => $last_name,
+    'customer_logo' => $logo,
     'pay_button_text' => $button,
     'custom_title' => $title,
     'currency' => $currency,
