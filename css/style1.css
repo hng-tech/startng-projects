@@ -145,7 +145,7 @@ header #donateBtn {
 /* ------------------------------------------------ */
 /* HEADER */
 /* ------------------------------------------------ */
-
+ 
 header button {
   font-size: 30px;
   background-color: #f0981d;
@@ -159,6 +159,8 @@ header span {
 }
 
 header {
+	display:flex;
+ 	flex-wrap: wrap;
   background-image: url(../img/header-background-image1.png);
   background-size: cover;
   background-position: center;
@@ -308,16 +310,16 @@ img[about_image] {
   margin-left: 40px;
 }
 
-/* Main navi */
+/* Main navi changed to flex to allow responsiveness in smaller devices */
 .main-nav {
-  float: right;
+ display:flex;
+ flex-wrap:wrap;
   list-style: none;
   margin-top: 55px;
   margin-right: 100px;
 }
 
-.main-nav li {
-  display: inline-block;
+.main-nav li { 
   margin-left: 40px;
   font-family: Montserrat;
   font-weight: lighter;
@@ -352,6 +354,13 @@ img[about_image] {
   font-family: Dosis;
   font-size: 150%;
 }
+@media only screen and (min-width:411px){
+	.header-text-box{
+		width:58%;
+		font-size:100%;
+	}
+
+}
 
 .header-text-box span {}
 
@@ -361,8 +370,8 @@ img[about_image] {
 
 
 #testimonials{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/kids2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/kids2.png);
      
 }
 
@@ -377,28 +386,21 @@ img[about_image] {
 }
 
 .vision-3-boxes {
-  width: 80%;
-  height: 300px;
-  margin-top: -130px;
-  display: flex;
-  flex-direction: row;
+	display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
+margin-top: -130px;
+  
 }
 
 .vision {
-  width: 40%;
-  height: 300px;
   background-color: #e67e22;
 }
 
 .donate {
-  width: 30%;
-  height: 300px;
-  background-color: #FE982D;
+   background-color: #FE982D;
 }
 
 .volunteer {
-  width: 30%;
-  height: 300px;
   background-color: #F2B141;
 }
 
@@ -439,6 +441,12 @@ img[about_image] {
   -webkit-box-shadow: 0 0 15px -3px rgba(138, 112, 138, 1);
   -moz-box-shadow: 0 0 15px -3px rgba(138, 112, 138, 1);
   box-shadow: 0 0 15px -3px rgba(138, 112, 138, 1);
+} 
+@media only screen and (min-width:411px){
+	.donate-button{
+		width:150px; 
+		font-size:15px;
+	}
 }
 
 .donate-button p {
@@ -474,6 +482,12 @@ img[about_image] {
   box-shadow: 0 0 15px -3px rgba(138, 112, 138, 1);
 }
 
+@media only screen and (min-width:411px){
+	.volunteer-button{
+		width:150px; 
+		font-size:15px;
+	}
+}
 .volunteer-button p {
   position: absolute;
   font-family: Open Sans;
@@ -732,8 +746,8 @@ header {
 
 
 #testimonials{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/kids2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/kids2.png);
      
 }
 
