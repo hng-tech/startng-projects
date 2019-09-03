@@ -19,6 +19,17 @@
           </div> 
     
         <nav id="navbar">
+          <div class="nav-cont-small" onclick="hamburgerMenu(this)">
+              <div class="bar-1"></div>
+              <div class="bar-2"></div>
+              <div class="bar-3"></div>
+          </div>
+          <div class="navSmall">
+              <div><a href="about.html" class="nav-links">About</a></div>
+              <div><a href="https://forms.gle/97kHEfjkLAZzqHWE9" class="nav-links" target=_blank>Membership</a></div>
+              <div><a href="team.html" class="nav-links">Team</a></div>
+              <div><a href="contact.html" class="nav-links">Contact Us</a></div>
+          </div>
       <ul id="nav-container">
         <li><a href="about.html" class="nav-links">About</a></li>
         <li><a href="https://forms.gle/97kHEfjkLAZzqHWE9" class="nav-links" target=_blank>Membership</a></li>
@@ -31,15 +42,16 @@
     
     
       <div id="img-container">
-      <img id="image" src="https://res.cloudinary.com/nkechi-christabel/image/upload/v1567206345/zgj1hhiuugthrrsl0jgv.png" alt="img-banner">
-      </div>
+      <!-- <img id="image" src="" alt="img-banner"> -->
       
-      <div id="banner-text">
-        <h1>Live with dignity</h1>
-          <p> We aim to promote a healthy menstrual hygiene by<br>distributing sanitary products and creating awareness.<br>Help impact a life.</p>
-       
-       <button><a href="https://rave.flutterwave.com/pay/gifta_a_pad" target="_blank">Donate Now</a></button>
-       
+      
+        <div id="banner-text">
+          <h1>Live with dignity</h1>
+            <p> We aim to promote a healthy menstrual hygiene by<br>distributing sanitary products and creating awareness.<br>Help impact a life.</p>
+        
+        <button><a href="https://rave.flutterwave.com/pay/gifta_a_pad" target="_blank">Donate Now</a></button>
+        
+      </div>
     </div>
       </section> 
         
@@ -99,6 +111,23 @@
     
 
     <script src="https://kit.fontawesome.com/64ab2a0281.js"></script>
+
+    <!-- Hamburger menu script added here -->
+    ​<script>
+        var acc = document.getElementsByClassName("nav-cont-small");
+var i;
+        for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("new");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+    </script>
       
   </body>
 </html>
