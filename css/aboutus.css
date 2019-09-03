@@ -1,0 +1,135 @@
+body {
+    font-family: "Dosis", sans-serif;
+}
+
+.bg {
+    background-image: url(../img/about-us-page-image.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.logo {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.navbar {
+    float: right;
+    list-style: none;
+    margin-top: 80px;
+    margin-right: 40px;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 40px;
+    font-family: Montserrat;
+    font-weight: lighter;
+    font-size: 19px;
+}
+
+.navbar li a:link,
+.navbar li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    border-bottom: 2px solid #e67e22;
+    color: #e67e22;
+}
+
+.centerpiece {
+    margin: 100px;
+    padding: 70px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.bold {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 500;
+    color: white;
+}
+
+.light {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: lighter;
+    color: white;
+}
+
+.bolder {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+
+.below-about-us {
+    margin: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container>div {
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    width: 50%;
+}
+
+.about-image {
+    margin-top: 30px;
+    width: 600px;
+    height: 380px;
+}
+
+.partners {
+    text-align: center;
+    margin-top: -20px;
+}
+
+h2:after {
+    display: block;
+    height: 3px;
+    background-color: #ff8121;
+    content: " ";
+    width: 80px;
+    margin-top: 10px;
+}
+
+.partners>h2:after {
+    width: 50px;
+    margin-left: 650px;
+    margin-top: 5px;
+    font-size: 32px;
+}
+
+.logos>img {
+    margin-right: 20px;
+}
+
+.logos>img:nth-child(1) {
+    margin-bottom: 5px;
+}
+
+.logos>img:nth-child(2) {
+    margin-bottom: 5px;
+}
