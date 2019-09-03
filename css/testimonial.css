@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1181px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/*UTILITY*/
+.u-1 {
+  cursor: pointer;
+}
+
+img:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+/*END OF UTILITY*/
+.container {
+  width: 1181px;
+  margin: 0 auto;
+  width: 100%;
+}
+#wrap {
+  width: 1181px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  justify-self: center;
+}
+.title {
+  width: 178px;
+  height: 35px;
+  left: 27px;
+  top: 716px;
+  margin-bottom: 59px;
+}
+.title h1[lead] {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  color: #ff8121;
+  border-bottom: 1px solid #363434;
+}
+
+.testimonials-grid {
+  position: absolute;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+img {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  left: 66px;
+  top: 810;
+  border-radius: 50%;
+  transition: all 0.5s ease-out;
+}
+.name {
+  float: right;
+  margin-right: 13rem;
+  margin-top: 0.5rem;
+  clear: both;
+}
+.img-name {
+  margin-bottom: 2rem;
+}
+.name h1 {
+  color: #ff8121;
+}
+.item {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.test-item1 {
+  width: 483px;
+  height: 320px;
+  left: 66px;
+  top: 816px;
+}
+
+.test-item2 {
+  width: 483px;
+  height: 320px;
+  left: 608px;
+  top: 815px;
+}
+.test-item3 {
+  width: 483px;
+  height: 320px;
+  left: 66px;
+  top: 1213px;
+}
+.test-item4 {
+  width: 483px;
+  height: 320px;
+  left: 66px;
+  top: 1213px;
+}
+
+.profile {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 37px;
+  padding-right: 55px;
+  line-height: 25px;
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .testimonials-grid {
+    grid-template-areas:
+      "row1 " "row2"
+      "row3 " "row4";
+  }
+  .item {
+    margin-right: 35rem;
+  }
+  .test-item1 {
+    grid-area: row1;
+  }
+  .test-item2 {
+    grid-area: row2;
+  }
+  .test-item3 {
+    grid-area: row3;
+  }
+  .test-item4 {
+    grid-area: row4;
+  }
+  #wrap {
+    width: 1181px;
+    margin-left: 61px;
+    margin-left: 61px;
+  }
+  .title {
+    margin-left: 27px;
+  }
+}

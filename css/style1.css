@@ -102,6 +102,7 @@ a:active {
 
 
 /* HEADER RE-DESIGN */
+
 #img{
         width:20%;
         height:10%;
@@ -356,6 +357,13 @@ img[about_image] {
 
 .orange-text {
   color: #e67e22;
+}
+
+
+#testimonials{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+     
 }
 
 /* ----------------------------------------------- */
@@ -719,6 +727,14 @@ header {
 
 .sec3 h3 {
   letter-spacing: 2px;
+}
+
+
+
+#testimonials{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+     
 }
 
 @media screen and (max-width: 550px) {
