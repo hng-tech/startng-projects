@@ -69,7 +69,9 @@ if (isset($_POST['submit'])) {
 
                 <div id="login">
                     <h2>Don't submit this form is your name is not on this <a target="_blank" href="https://docs.google.com/spreadsheets/d/1IT-zTY_AaC_vaBa1QTNoQ9coP_3dZE97xaoPgl9GpUg/edit?usp=sharing"> list! </a></h2>
-                    <form action="" method="post" autocomplete="off">
+                    <form action="" method="post" autocom
+                    
+                    
 
                         <div class="field-wrap">
                             <label>
