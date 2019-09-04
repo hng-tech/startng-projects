@@ -65,7 +65,7 @@ if (isset($_GET['txref'])) {
 
         //Get User ID from transaction ref
         $uArray = explode('-', $txref);
-        $userId = $uArray[0];
+        $userId = (int) $uArray[0];
 
         $user_query = mysqli_query($con, "SELECT * FROM users WHERE user_id = '$userId'") or die(mysqli_error($con));
         $row = mysqli_fetch_array($user_query);
