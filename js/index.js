@@ -1,15 +1,8 @@
-
-// Team page
-
-let container = document.querySelector("#profile")
-
-
 let team_row = document.querySelector(".team-row")
 
 const displayProfile = (data) => {
   data.forEach(member => {
 
-    let team_row = document.createElement("div")
     let team_column = document.createElement("div")
     let unhover_img = document.createElement("div")
     let img = document.createElement("img")
@@ -22,17 +15,10 @@ const displayProfile = (data) => {
     let resume = document.createElement("a")
     let i = document.createElement("i")
 
-    team_row.className = "row1"
-    team_column.className = "team_column"
-
-    unhover_img.className = "unhover_img"
-
-    img.src = member.cloudinary
 
     team_column.className = "team_column"
     unhover_img.className = "unhover_img"
     img.src = member.cloudinary
-
 
     unhover_img.appendChild(img)
     team_column.appendChild(unhover_img)
@@ -55,22 +41,9 @@ const displayProfile = (data) => {
     ul.appendChild(li)
 
     team_column.appendChild(ul)
-
-    let clear = document.createElement("div")
-    clear.className = "clear"
-    team_column.appendChild(clear)
-
-    team_row.appendChild(team_column)
-    container.appendChild(team_row)
-
-    team_column.appendChild(ul)
-    team_row.appendChild(team_column)
-
-    team_column.appendChild(ul)
     team_row.appendChild(team_column)
   })
 }
 
 displayProfile(data);
-
 // Form validation
