@@ -17,7 +17,7 @@
     <div class="container">
         <div id="branding">
             <a href="index.html">
-                <img src="images/logo.png" width="165" height="70" />
+                <img src="https://res.cloudinary.com/judejax/image/upload/v1567639575/logo.png" alt="Volunteeer Logo" title="Volunteer NG" width="165" height="70" />
             </a>
         </div>
         <nav>

@@ -16,7 +16,7 @@ $userId = $_GET['id'];
     <link href="./css/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="./css/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="./css/fontawesome/css/solid.css" rel="stylesheet" />
-    <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/png" />
+    <link rel="icon" href="https://res.cloudinary.com/judejax/image/upload/v1567639756/favicon.ico" alt="Volunteeer NG Icon" sizes="16x16" type="image/png" />
 </head>
 
 <body>
@@ -138,7 +138,7 @@ $userId = $_GET['id'];
     <header>
         <div class="container">
             <div id="branding">
-                <img src="images/logo.png" width="120" height="70" />
+                <img src="https://res.cloudinary.com/judejax/image/upload/v1567639575/logo.png" alt="Volunteeer Logo" title="Volunteer NG" width="120" height="70" />
             </div>
             <nav>
                 <ul>

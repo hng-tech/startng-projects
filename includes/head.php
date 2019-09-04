@@ -7,5 +7,5 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link href="./css/fontawesome/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/team.css" />
-    <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/png" />
+    <link rel="icon" href="https://res.cloudinary.com/judejax/image/upload/v1567639756/favicon.ico" alt="Volunteeer NG Icon" sizes="16x16" type="image/png" />
 </head>

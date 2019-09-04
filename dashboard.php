@@ -38,7 +38,7 @@ $raisedDonations = mysqli_fetch_array($user_donation_query);
     <link rel="stylesheet" href="./css/howYouCanHelp.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="./css/fontawesome/css/all.min.css" rel="stylesheet" />
-    <link rel="icon" href="https://res.cloudinary.com/judejax/image/upload/v1567639756/favicon.ico" sizes="16x16" type="image/png" />
+    <link rel="icon" href="https://res.cloudinary.com/judejax/image/upload/v1567639756/favicon.ico" alt="Volunteeer NG Icon" sizes="16x16" type="image/png" />
 
 </head>
 
@@ -49,7 +49,7 @@ $raisedDonations = mysqli_fetch_array($user_donation_query);
         <div class="container">
             <div id="branding">
                 <a href="index.html">
-                    <img src="https://res.cloudinary.com/judejax/image/upload/v1567639575/logo.png" width="165" height="70" />
+                    <img src="https://res.cloudinary.com/judejax/image/upload/v1567639575/logo.png" alt="Volunteeer Logo" title="Volunteer NG" width="165" height="70" />
                 </a>
             </div>
             <nav>

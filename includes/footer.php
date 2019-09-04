@@ -1,7 +1,7 @@
   <footer>
       <div class="footer">
           <div class="col-3">
-              <img src="images/volunteerNG_white_full.png" height="100" width="130"> <br>
+              <img src="https://res.cloudinary.com/judejax/image/upload/v1567645699/volunteerNG_white_full.png" alt="Volunteer Ng logo" title="volunteer ng" height="100" width="130"> <br>
               <a href=""><i class="fa fa-phone"></i>+234 7071234567</a>
               <a href=""><i class="fa fa-envelope"></i>volunteerng@gmail.com</a>
               <a href=""><i class="fas fa-map-marker"></i>Find Us</a>

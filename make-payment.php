@@ -19,7 +19,7 @@ $userId = $_GET['id'];
     l-scale=1.0" />
     <title>Volunteer NG | Money Donation</title>
     <link href="./css/fontawesome/css/all.min.css" rel="stylesheet" />
-    <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/png" />
+    <link rel="icon" href="https://res.cloudinary.com/judejax/image/upload/v1567639756/favicon.ico" alt="Volunteeer NG Icon" sizes="16x16" type="image/png" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/render.css" />
 </head>
@@ -48,7 +48,7 @@ $userId = $_GET['id'];
         <div class="container">
             <div id="branding">
                 <a href="index.html">
-                    <img src="images/logo.png" width="165" height="70" />
+                    <img src="https://res.cloudinary.com/judejax/image/upload/v1567639575/logo.png" alt="Volunteeer Logo" title="Volunteer NG" width="165" height="70" />
                 </a>
             </div>
             <nav>
@@ -143,7 +143,7 @@ $userId = $_GET['id'];
     <footer>
         <div class="footer">
             <div class="col-3">
-                <img src="./images/volunteerNG_white_full.png" height="100" width="130"> <br>
+                <img src="https://res.cloudinary.com/judejax/image/upload/v1567645699/volunteerNG_white_full.png" alt="Volunteer Ng logo" title="volunteer ng" height="100" width="130"> <br>
                 <a href=""><i class="fa fa-phone"></i>+234 7071234567</a>
                 <a href=""><i class="fa fa-envelope"></i>volunteerng@gmail.com</a>
                 <a href=""><i class="fas fa-map-marker"></i>Find Us</a>
