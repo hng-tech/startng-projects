@@ -119,7 +119,7 @@ if (isset($_POST['signup'])) {
     <head>
         <div class="container">
             <div class="form-container sign-up-container">
-                <form action="" action="POST">
+                <form action="" method="POST">
                     <!--Signup-->
                     <h2>Create Account</h2>
                     <!-- <div class="social-container">
@@ -144,7 +144,7 @@ if (isset($_POST['signup'])) {
                 </form>
             </div>
             <div class="form-container sign-in-container">
-                <form action="" action="POST">
+                <form action="" method="POST">
                     <!--SignIn-->
                     <h1>Sign in</h1>
                     <!-- <div class="social-container">
