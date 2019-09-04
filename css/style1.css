@@ -32,7 +32,7 @@ body {
 }
 
 section {
-  padding: 80px 0;
+  padding: 20px 0;
 }
 
 /* ------- HEADINGS --------*/
@@ -107,7 +107,7 @@ a:active {
         width:20%;
         height:10%;
     }
-    
+
     #line1{
         font-size:20px;
     }
@@ -363,7 +363,7 @@ img[about_image] {
 #testimonials{
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
-     
+
 }
 
 /* ----------------------------------------------- */
@@ -587,10 +587,9 @@ img[about_image] {
 	width:49%;
 }
 
- h2,p{
+//* h2,p{
 	font-family: georgia;
-
-}
+} */
 
 .text h2{
 	font-size:35px;
@@ -613,7 +612,7 @@ img[about_image] {
 	background-color:#ffa600;
 	color: #fff;
 	border-color:#ffa600;
-	height: 40px; 
+	height: 40px;
 	font-family: montserrat;
 	font-size: 20px;
 	border:none;
@@ -635,7 +634,7 @@ img[about_image] {
 
 hr{
 	color:#e0e0e0;
-	background-color: #e0e0e0; 
+	background-color: #e0e0e0;
 /*	border-color: #e0e0e0;*/
 	margin: 0 auto 20px auto;
 	width: 100px !important;
@@ -734,7 +733,7 @@ header {
 #testimonials{
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
-     
+
 }
 
 @media screen and (max-width: 550px) {
@@ -899,72 +898,72 @@ header {
 /* Footer styles */
 /* ------------------------------------------------ */
 
-.footer { 
+.footer {
   background-color: #363434;
-  color: white; 
-  padding: 50px 80px 10px; 
+  color: white;
+  padding: 50px 80px 10px;
 }
 
-.footer a:link, .footer a:visited { 
-  color: #FFFFFF; 
-  text-decoration: none; 
+.footer a:link, .footer a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
-.footer a:hover, .footer a:active { 
-  color: #FF8121; 
+.footer a:hover, .footer a:active {
+  color: #FF8121;
 }
 
-.foot-title { 
+.foot-title {
   font: 300 1.5em "Dosis", sans-serif;
   margin: 0;
   margin-bottom: 7px;
 }
 
-.underbar { 
-  width: 50px; 
+.underbar {
+  width: 50px;
   border-bottom: 2px solid #FFFFFF; }
 
-.foot-content { 
-  margin-top: 20px; 
+.foot-content {
+  margin-top: 20px;
 }
 
-.foot-content, .design-info { 
-  font: 400 1em "Open Sans", sans-serif; 
+.foot-content, .design-info {
+  font: 400 1em "Open Sans", sans-serif;
 }
 
-.foot-about, .foot-links, .foot-question { 
-  float: left; 
+.foot-about, .foot-links, .foot-question {
+  float: left;
 }
 
-.foot-about { 
-  width: 40%; 
+.foot-about {
+  width: 40%;
 }
 
-.foot-links { 
+.foot-links {
   width: 20%;
 }
 
-.foot-question { 
-  width: 40%; 
+.foot-question {
+  width: 40%;
 }
 
-.foot-about .foot-content { 
-  width: 60%; 
+.foot-about .foot-content {
+  width: 60%;
 }
 
-.clear::after { 
-  content: ""; 
-  display: table; 
-  clear: both; 
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.foot-info { 
-  text-align: center; 
-  margin-top: 30px; 
+.foot-info {
+  text-align: center;
+  margin-top: 30px;
 }
 
-#team-stockholm, .material-icons { 
-  color: #FF8121; 
+#team-stockholm, .material-icons {
+  color: #FF8121;
 }
 
 /* RESPONSIVE footer */
@@ -975,16 +974,16 @@ header {
     padding: 30px;
   }
 
-  .foot-about { 
-    width: 35%; 
+  .foot-about {
+    width: 35%;
   }
 
-  .foot-links { 
+  .foot-links {
     width: 20%;
   }
 
-  .foot-question { 
-    width: 45%; 
+  .foot-question {
+    width: 45%;
   }
 
 }
@@ -995,7 +994,7 @@ header {
     padding: 20px;
   }
 
-  .foot-about, .foot-links, .foot-question, .foot-about .foot-content { 
+  .foot-about, .foot-links, .foot-question, .foot-about .foot-content {
     float: none;
     width: 100%;
   }
@@ -1014,12 +1013,12 @@ header {
   clear: both;
 }
 
-[enquiry_form], [contact_text]{
+[enquiry_form], [main]{
   margin: 30px auto;
   width: 70%;
 }
-[contact_text] h1,
-[contact_text] p{
+
+[main] p{
   color: #000;
   font-weight: normal;
   letter-spacing: 0;
@@ -1027,23 +1026,23 @@ header {
   font-size: unset;
 }
 
-[contact_text] table{
+[main] table{
   margin: 40px 0;
   border-spacing: 10px;
 }
 
-[contact_text] table [social_media]{
-  padding-top: 40px;
+[main] table [social_media]{
+  padding-top: 10px;
   font-size: small;
 }
 
-[contact_text] table [social_media] img{
+[main] table [social_media] img{
   width: 40px;
 }
-[contact_text] table.icon{
+[main] table.icon{
   width: 1%;
 }
-[contact_text] table.text1{
+[main] table.text1{
   width: 99%;
 }
 
@@ -1077,14 +1076,81 @@ hr{
 }
 
 [enquiry_form] input[type="submit"]{
-  padding: 15px 100px;
+  padding: 12px 80px;
+  border: none;
   border-radius: 10px;
-  margin: 0 auto;
+  margin-left: 180px;
+  margin-right: 180px;
   color: #fff;
-  background: #000;
-}
+  font-weight: 600;
+  font-size: 20px;
+  background: rgb(255,129,33);
+  background: linear-gradient(90deg, rgba(255,129,33,1) 40%, rgba(242,177,65,1) 75%, rgba(254,152,45,1) 100%);
+  }
+
 @media screen and (max-width: 600px){
   .view{
     width: 100%;
   }
 }
+
+/* @Oluchii */
+    .rope{
+      padding-bottom: 10px;
+      border-bottom: 2px solid currentColor;
+      color: #000000;
+      word-spacing: normal;
+      letter-spacing: normal;
+    }
+
+    .ropes{
+      color: #000000;
+      font-size: 30px;
+      word-spacing: 1px;
+      letter-spacing: 2px;
+      margin-left: 15px;
+    }
+
+    .main {
+        margin: 10%;
+        background-color: white;
+        font-family: 'Philosopher';
+        line-height: 1.5em;
+    }
+
+    .main .right {
+        float: left;
+        height: auto;
+        background-size: cover;
+    }
+
+    .right .content {
+        margin: auto;
+        padding-top: 10px;
+        color: #000000;
+    }
+
+    .right .content i{
+        text-align: left;
+        font-size: 25px;
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+
+    .right .content p {
+        padding: 17px;
+        font-size: 19px;
+        }
+
+        .connect{
+          color: #000000;
+          margin: 20px;
+        }
+
+        .social_media{
+          margin: 20px;
+          font-size: 30px;
+          word-spacing: 30px;
+        }
