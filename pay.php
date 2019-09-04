@@ -4,20 +4,25 @@ require('includes/functions.php');
 require('includes/db_connection.php');
 
 
-if (!isset($_GET['user']) || !isset($_GET['email']) || !isset($_GET['amount']) || !isset($_GET['firstname']) || !isset($_GET['lastname'])) {
-  header('Location: index.php');
-  exit(0);
-}
+// if (!isset($_GET['user']) || !isset($_GET['email']) || !isset($_GET['amount']) || !isset($_GET['firstname']) || !isset($_GET['lastname'])) {
+//   header('Location: index.php');
+//   exit(0);
+// }
 
-$userId = $_GET['user'];
-$email = $_GET['email'];
-$amount = $_GET['amount'];
-$first_name = $_GET['firstname'];
-$last_name = $_GET['lastname'];
+// $userId = $_GET['user'];
+// $email = $_GET['email'];
+// $amount = $_GET['amount'];
+// $first_name = $_GET['firstname'];
+// $last_name = $_GET['lastname'];
 
 
 // $query = mysqli_query($con, "SELECT * FROM users WHERE user_id = '$userId'") or die(mysqli_error($con));
 // $row = mysqli_fetch_array($query);
+
+
+$userId = 1;
+$email = 'judd@gmail.com';
+$amount = 3000;
 
 $reference = generateRef($userId);
 
@@ -29,11 +34,12 @@ $customer_email = $email;
 $currency = "NGN";
 $txref = $reference; //unique references for transaction.
 $PBFPubKey = $flutterWavePublicKey; //FlutterWave Public Key
-// $first_name = 'Jude';
-// $last_name = 'Jonathan';
+$first_name = 'Jude';
+$last_name = 'Jonathan';
 $logo = $baseUrl . '/images/logo.png';
 $button = 'Donate';
 $title = 'VolunteerNG';
+
 
 
 curl_setopt_array($curl, array(

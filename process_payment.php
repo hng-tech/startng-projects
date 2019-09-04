@@ -101,12 +101,12 @@ if (isset($_GET['txref'])) {
     } else {
         //Trasanction failed
 
-        echo "<script type='text/javascript'>document.location='failure-page-index.html'</script>";
+        echo "<script type='text/javascript'>document.location='failed-page-index.html'</script>";
         exit(0);
     }
 } else {
 
     echo "<script type='text/javascript'>alert('No Transaction Ref provided')</script>";
-    echo "<script type='text/javascript'>document.location='failure-page-index.html'</script>";
+    echo "<script type='text/javascript'>document.location='failed-page-index.html'</script>";
     // header('Location: index.php');
 }
