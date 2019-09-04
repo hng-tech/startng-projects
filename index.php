@@ -1,55 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Volunteer NG</title>
-    <link rel="stylesheet" href="./css/howYouCanHelp.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="./css/fontawesome/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/team.css" />
-    <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/png" />
-</head>
+<?php
+$pageTitle = 'Home';
+include('includes/head.php');
+?>
 
 <body>
-    <!-- Top Header -->
-    <div class="topmost-nav">
-        <div class="left col-3">
-            <a href=""><i class="fab fa-facebook"></i> </a> &nbsp; &nbsp; &nbsp;
-            <a href=""><i class="fab fa-instagram"></i> </a> &nbsp; &nbsp; &nbsp;
-            <a href=""><i class="fab fa-twitter"></i> </a> &nbsp; &nbsp; &nbsp;
-            <a href=""><i class="fab fa-youtube"></i> </a> &nbsp; &nbsp; &nbsp;
-        </div>
-        <div class="right col-6">
-            <a href="tel:7071234567"><i class="fa fa-phone"></i> +234 7071234567</a>
-            <a href="mailto:volunteerng@gmail.com"><i class="fa fa-envelope"></i> volunteerng@gmail.com</a>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div id="branding">
-                <a href="index.html">
-                    <img src="images/logo.png" width="165" height="70" />
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="entities.php">Entities</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">The Team</a></li>
-                    <li class="auth_button">
-                        <a href="sign-in.php"> <i class="fa fa-user white-fa"></i>
-                            Sign In | Sign Up</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Include Top Nav & Header files -->
+    <?php
+    include('includes/header.php');
+    ?>
 
     <!-- Main -->
     <section id="main">
@@ -58,9 +19,9 @@
             <p>Commited to making the World a better place for Everyone</p>
             <p>
 
-                <a href="make-payment.html" class="main_link_button">
+                <a href="entities.php" class="main_link_button">
                     <i class="fa fa-heart white-fa"></i> Donate</a>
-                <a href="signup.php" class="main_link_button">
+                <a href="sign-in.php" class="main_link_button">
                     <i class="fas fa-hand-holding-heart white-fa"></i> I Need a Volunteer</a>
             </p>
         </div>
@@ -188,51 +149,10 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer">
-            <div class="col-3">
-                <img src="images/volunteerNG_white_full.png" height="100" width="130"> <br>
-                <a href=""><i class="fa fa-phone"></i>+234 7071234567</a>
-                <a href=""><i class="fa fa-envelope"></i>volunteerng@gmail.com</a>
-                <a href=""><i class="fas fa-map-marker"></i>Find Us</a>
-            </div>
-            <div class="col-3">
-                <h3>Donations</h3>
-                <ul>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Food Donation</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Money Donation</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Water Supply</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Outfit Donation</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Food Item Donation</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Medical Donations</li>
-                </ul>
-            </div>
-            <div class="col-3">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Our Team</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Testimonies</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Gallery</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; About Us</li>
-            </div>
-            <div>
-                <h3>Stay Updated</h3>
-                <span>Subscribe to our newsletter</span>
-                <div class="input-field">
-                    <form>
-                        <input type="text">
-                        <span class="submit"><i class="fas fa-arrow-right"></i></span>
-                    </form>
-                </div>
-                <div class="inline">
-                    <a href=""><i class="fab fa-facebook"></i> </a> &nbsp; &nbsp;
-                    <a href=""><i class="fab fa-instagram"></i> </a> &nbsp; &nbsp;
-                    <a href=""><i class="fab fa-twitter"></i> </a> &nbsp; &nbsp;
-                    <a href=""><i class="fab fa-youtube"></i> </a> &nbsp; &nbsp;
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Include Footer -->
+    <?php
+    include('includes/footer.php');
+    ?>
 
 </body>
 
