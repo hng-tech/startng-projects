@@ -5,7 +5,7 @@ require('includes/db_connection.php');
 include('includes/functions.php');
 
 
-$query = mysqli_query($con, "SELECT * FROM submissions") or die(mysqli_error($con));
+$query = mysqli_query($con, "SELECT * FROM submissions  ORDER BY order ASC") or die(mysqli_error($con));
 $count = mysqli_num_rows($query);
 
 ?>
