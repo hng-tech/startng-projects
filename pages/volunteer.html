@@ -1,75 +1,59 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Volunteer</title>
-	<link rel="stylesheet" type="text/css" href="../css/volunteer.css">
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Volunteer Registration</title>
+<meta name="Volunteer Form" content="Minds and Souls volunteer registration form" />
+<link rel='stylesheet' href='../css/volunteer_form_validation.css' type='text/css' />
+  <link rel="stylesheet" href="../css/volunteer.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+<script src="../js/volunteer_form_validation.js"></script>
 </head>
-<body>
-<img id="img" src="../img/mindsandsouls1.png" alt="Minds and Souls Logo" class="logo">
-<h1>VOLUNTEERS</h1>
-<form>
+<body onLoad="document.registration.userid.focus();">
 
-<section>
-	<div class="surname">
-		<label for="surname">Last Name: </label>
-		<input id="surname" type="text" name="surname" placeholder="Afro" required>
-	</div>
+<div id="frame">    
+    <div id="formheader">
+   		BECOME A VOLUNTEER
+    </div>
 
-	<div class="firstName">
-		<label for="firstname">First Name: </label>
-		<input id="firstname" type="text" name="firstname" placeholder="John" required>
-	</div>
-	<div class="email">
-		<label for="email">Email: </label>
-		<input id="email" type="text" name="Email" required>
-	</div>
-	<div class="state">
-		<label for="firstname">State: </label>
-		<select name="state">
-			<option>State</option>
-			<option>Abia</option>
-			<option>Adamawa</option>
-			<option>Awka Ibom</option>
-			<option>Anambra</option>
-			<option>Bauchi</option>
-			<option>Bayelsa</option>
-			<option>Benue</option>
-			<option>Borno</option>
-			<option>Cross River</option>
-			<option>Delta</option>
-			<option>Ebonyi</option>
-			<option>Edo</option>
-			<option>Ekiti</option>
-			<option>Enugu</option>
-			<option>Federal Capital Territory</option>
-			<option>Gombe</option>
-			<option>Imo</option>
-			<option>Jigawa</option>
-			<option>Kaduna</option>
-			<option>Kano</option>
-			<option>Katsina</option>
-			<option>Kebbi</option>
-			<option>Kogi</option>
-			<option>Kwara</option>
-			<option>Lagos</option>
-			<option>Nasarawa</option>
-			<option>Niger</option>
-			<option>Ogun</option>
-			<option>Ondo</option>
-			<option>Osun</option>
-			<option>Oyo</option>
-			<option>Plateau</option>
-			<option>Rivers</option>
-			<option>Sokoto</option>
-			<option>Taraba</option>
-			<option>Yobe</option>
-			<option>Zamfara</option>
-		</select>
-	</div>
-	<div class="vol">
-		<button>VOLUNTEER</button>
-	</div>
-</section>	
-</form>
+	<div id="form">
+        <form name='registration' onSubmit="return formValidation();">
+            <ul>
+           <!--     <li><label for="Fullname">Fullname:</label></li>
+                <li><input type="text" name="fname" size="50" /></li>
+                
+                <li><label for="address">Address:</label></li>
+                <li><input type="text" name="address" size="50" /></li>
+                
+                <li><label for="country">Country:</label></li>
+                <li>
+                    <select name="country">
+                        <option selected="" value="Default">(Please select a country)</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="GH">Ghana</option>
+                        <option value="OT">Others</option>
+                    </select>
+                </li>
+                <br/>
+                <li><label for="email">E-mail:</label></li>
+                <li><input type="text" name="email" size="50" /></li>
+                
+                <li><label id="gender">Sex:</label></li>
+                <li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+                <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+                
+                
+                <li><label for="zip">ZIP Code:</label></li>
+                <li><input type="text" name="zip" /></li>
+                
+                <li><label for="note">Note:</label></li>-->
+                <li><textarea name="note" id="desc"></textarea></li>
+                
+                <li><input class="button" type="submit" name="submit" value="Submit" /></li>    
+            </ul>
+        </form>
+    </div>   
+	    
+</div>
+
 </body>
 </html>
