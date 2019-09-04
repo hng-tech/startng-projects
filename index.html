@@ -11,7 +11,12 @@
     href="https://fonts.googleapis.com/css?family=Dosis:300,400,500%7CMontserrat:300,500%7COpen+Sans:300,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<<<<<<< HEAD
   <link rel="stylesheet" href="css/style1.css">
+=======
+  <link rel="stylesheet" href="../css/style1.css">
+
+>>>>>>> origin/gamma
 </head>
 
 <body>
@@ -20,6 +25,7 @@
     <div class="row">
       <img id="img" src="../img/mindsandsouls1.png" alt="Minds and Souls Logo" class="logo">
       <ul class="main-nav">
+<<<<<<< HEAD
         <li id="line1"><a href="index.html">Home</a></li>
         <li id="line2"><a href="pages/about.html">About</a></li>
         <li id="line3"><a href="#">Gallery</a></li>
@@ -28,6 +34,14 @@
         <li id="line5"><a href="#">Contact Us</a></li>
 
         <li id="line6">
+=======
+        <li id="line1"><a href="../pages/index.html">Home</a></li>
+        <li id="line2"><a href="../pages/team.html">About</a></li>
+        <li id="line3"><a href="../pages/gallery.html">Gallery</a></li>
+        <li id="line4"><a href="../pages/testimonial.html">Testimonials</a></li>
+        <li id="line5"><a href="../pages/contactUs.html">Contact Us</a></li>
+        <li>
+>>>>>>> origin/gamma
           <input type="button" id="donateBtn"
                  onclick="location.href='https://rave.flutterwave.com/donate/5hwqw1jravwl';" value="Donate">
         </li>
@@ -56,7 +70,7 @@
           Even the all-powerful Pointing has no control about the blind texts.
         </p>
         <div class="donate-button">
-          <p><a href=" https://rave.flutterwave.com/donate/5hwqw1jravwl">Donate Now</a></p>
+          <p><a href="https://rave.flutterwave.com/donate/5hwqw1jravwl">Donate Now</a></p>
         </div>
       </div>
       <div class="volunteer">
@@ -65,7 +79,7 @@
           Even the all-powerful Pointing has no control about the blind texts.
         </p>
         <div class="volunteer-button">
-          <p><a href="volunteer.html">Be a Volunteer</a></p>
+          <p><a href="../pages/volunteer.html">Be a Volunteer</a></p>
         </div>
       </div>
     </div>
@@ -81,9 +95,7 @@
           them access to basic needs.
         </p>
         <div class="about-us-button">
-          <a href="../pages/about.html">
-            <p>READ MORE</p>
-          </a>
+          <a href="../pages/team.html"><p>READ MORE</p></a>
         </div>
       </div>
       <div class="about-us-img">
@@ -94,7 +106,7 @@
   <!--3_ITEM AND BE A VOLUNTEER SECTION(SECTION 5&6)-->
   <!-- removing of table tag from section 5 to use css for layout-->
   <div id="section5">
-    <div class="sec5">
+    <div class="sec5 donation5">
 
       <img src="../img/moneysign.png" alt="make_donation_png">
       <div>
@@ -116,7 +128,7 @@
       </div>
     </div>
 
-    <div class="sec5">
+    <div class="sec5 donation5">
       <!-- insert an icon by olaniyi900-->
       <img src="../img/moneysign.png" alt="sponsorship_png">
       <div>
@@ -128,50 +140,6 @@
       </div>
     </div>
   </div>
-
-
-  <section class="section-cities" id="testimonials">
-    <!--  <div>
-       <h2>SPONSORS</h2>
-     </div> -->
-
-    <div volunteer_section>
-      <table volunteer_section_view>
-        <tr>
-          <td for_image>
-            <img src="../img/kids1.png" alt="Kids_photo">
-          </td>
-          <td message_form>
-            <h2>Be a Volunteer</h2>
-            <form action="" method="POST">
-              <label for="name">Your Name</label>
-              <input type="text" name="name" id="name">
-              <label for="email">Your Email</label>
-              <input type="email" name="email" id="email">
-              <label for="message">Message</label>
-              <textarea name="message" id="message"></textarea>
-              <input type="button" value="Send Message">
-            </form>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="row js--wp-3">
-
-      <div class="col span-1-of-4 box">
-
-      </div>
-      <div class="col span-1-of-4 box">
-
-      </div>
-      <div class="col span-1-of-4 box">
-
-      </div>
-    </div>
-  </section>
-
-
 </main>
 <footer class="footer">
   <!-- About Us -->
@@ -190,11 +158,13 @@
     <div class="underbar"></div>
     <div class="foot-content">
       <p><a href="../pages/index.html">Home</a></p>
-      <p><a href="../pages/about.html">About</a></p>
-      <p><a href="#">Gallery</a></p>
+      <p><a href="../pages/team.html">About</a></p>
+      <p><a href="../pages/gallery.html">Gallery</a></p>
       <p><a href="#">Sponsors</a></p>
       <p><a href="https://rave.flutterwave.com/donate/5hwqw1jravwl">Donate</a></p>
       <p><a href="../pages/volunteer.html">Volunteer</a></p>
+      <p><a href="../pages/testimonial.html">Testimonials</a></p>
+      <p><a href="../pages/contactUs.html">Contact Us</a></p>
     </div>
   </div>
   <!-- Have A Question? -->
@@ -208,13 +178,13 @@
       <p><span class="material-icons">email: </span><a href="mailto:info@mindsandsoulsfoundation.com">info@mindsandsoulsfoundation.com</a>
       </p>
       <a href="#" target="_blank"><img src="../img/facebook-icon.png" alt="Facebook" width="30px"
-                                       height="30px"></a>
+                                                     height="30px"></a>
       <a href="#" target="_blank"><img src="../img/twitter-icon.png" alt="Twitter" width="30px" height="30px"></a>
       <a href="#"><img src="../img/instagram-icon.png" alt="Instagram" width="30px" height="30px"></a>
     </div>
   </div>
   <div class="clear"></div>
-  <p class="foot-info"> � 2019 Minds &amp; Souls Foundation. | Site design by <a href="../pages/team.html"
+  <p class="foot-info"> &copy; 2019 Minds &amp; Souls Foundation | Site design by <a href="../pages/team.html"
                                                                                  id="team-stockholm">Team_Stockholm</a>
   </p>
 </footer>
