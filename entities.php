@@ -56,7 +56,7 @@ $count = mysqli_num_rows($query);
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="entities.html">Entities</a></li>
+                    <li class="current"><a href="entities.php">Entities</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="team.html">The Team</a></li>
                     <li class="auth_button">
