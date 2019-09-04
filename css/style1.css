@@ -169,6 +169,19 @@ header {
   background-attachment: fixed;
 }
 
+.header1 {
+  display:flex;
+  flex-wrap: wrap;
+  background-size: contain;
+  max-height: 120px;
+  background-position: right;
+  height: 100vh;
+  align-items: stretch;
+  alignment: right;
+  background-attachment: fixed;
+  justify-content: flex-end;
+}
+
 .logo {
   height: 62px;
   width: auto;
@@ -313,7 +326,7 @@ img[about_image] {
 
 /* Main navi changed to flex to allow responsiveness in smaller devices */
 .main-nav {
- display:flex;
+ display: -webkit-inline-flex;
  flex-wrap:wrap;
   list-style: none;
   margin-top: 55px;
@@ -1229,7 +1242,7 @@ hr{
   float: left;
 }
 .main-nav {
- float: right;
+ float: left;
  margin-top: 20px;
  margin-right: 20px;
 }
