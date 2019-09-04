@@ -64,7 +64,7 @@ if (isset($_GET['txref'])) {
 
 
         //Get User ID from transaction ref
-        $uArray = explode('-', $txref);
+        $uArray = explode('-', $ref);
         $userId = (int) $uArray[0];
 
         $user_query = mysqli_query($con, "SELECT * FROM users WHERE user_id = '$userId'") or die(mysqli_error($con));
@@ -85,7 +85,7 @@ if (isset($_GET['txref'])) {
         }
 
         //query db and add new donation
-        $queryDB = mysqli_query($con, "INSERT INTO donations SET status = 'Successful', transaction_ref = '$txref', amount = '$chargeAmount', user_id = '$userId', email_of_donor = '$email', name_of_donor = '$fullName'") or die(mysqli_error($con));
+        $queryDB = mysqli_query($con, "INSERT INTO donations SET status = 'Successful', transaction_ref = '$ref', amount = '$chargeAmount', user_id = '$userId', email_of_donor = '$email', name_of_donor = '$fullName'") or die(mysqli_error($con));
         if ($queryDB) {
 
             //TODO: Redirect to payment success page
