@@ -600,7 +600,7 @@ margin-top: -130px;
 	width:49%;
 }
 
-//* h2,p{
+/* h2,p{
 	font-family: georgia;
 } */
 
@@ -1260,7 +1260,7 @@ header #donateBtn {
 .header-text-box {
  position: absolute;
  width: 97%;
- top: 45%:
+ top: 45%;
  bottom: 50%;
  left: 50%;
  -webkit-transform: translate(-50%, -50%);
@@ -1395,4 +1395,4 @@ header #donateBtn {
  width: 100%;
  margin: -200px 0 0;
  height: 200px;
-}
+}}

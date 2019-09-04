@@ -11,6 +11,19 @@ body {
   overflow-x: hidden;
 }
 
+#homeBtn{
+  background-color:#ff8121;
+  border: none;
+  color: black;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family:sans-serif;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
 /* Main navi */
 .main-nav {
   align-self: center;
