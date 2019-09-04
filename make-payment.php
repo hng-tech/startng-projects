@@ -80,7 +80,7 @@ include('includes/head.php');
 
 
         <form method="GET" action="pay.php">
-            <input type="hidden" name="user" aaction="<?php echo $userId ?>">
+            <input type="hidden" name="user" value="<?php echo $userId ?>">
             <div class="contactmenu">First Name <br />
                 <input type="text" name="firstname" placeholder="First Name" required /></div>
             <div class="contactmenu">Last Name <br />
