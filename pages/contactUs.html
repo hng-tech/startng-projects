@@ -63,14 +63,20 @@
                     </div>
                 </section>
                 <section class="view">
-                    <form action="#" method="POST" enquiry_form>
-                        <input type="text" name="Full Name" placeholder="Full Name" required>
-                        <input type="email" name="email" placeholder="Email Address" required>
-                        <input type="tel" name="telephone" placeholder="Phone number">
-                        <textarea name="Enquiry" cols="30" rows="13" placeholder="About your great idea" required></textarea>
-                        <input type="submit" value="Submit">
+                    <form action="#" method="POST" enquiry_form name="theForm" onsubmit="submitValidation()">
+                        <input type="text" placeholder="Full Name" name="fullName">
+                          <div id="errFullName" style="color: red; padding-left: 10px;"></div>
+                        <input type="email" placeholder="Email Address" name="emailAdd">
+                        <div id="errEmail" style="padding-left: 10px; color: red;"></div>
+                        <input type="tel" placeholder="Phone number" name="phone">
+                        <div id="errPhone" style="padding-left: 10px; color: red;"></div>
+                        <textarea name="enquiry" cols="30" rows="13" placeholder="About your great idea"></textarea>
+                        <div id="errEnquiry" style="padding-left: 10px; color: red;"></div>
+                        <input type="submit" value="Submit" >
                     </form>
                 </section>
             </div>   
+
+<script type="text/javascript" src="../js/contact-us.js"></script>
 </body>
 </html>
