@@ -5,7 +5,7 @@ require('includes/db_connection.php');
 include('includes/functions.php');
 
 
-$query = mysqli_query($con, "SELECT * FROM users  AND is_completed = '0'") or die(mysqli_error($con));
+$query = mysqli_query($con, "SELECT * FROM users WHERE is_completed = 0") or die(mysqli_error($con));
 $count = mysqli_num_rows($query);
 
 ?>
