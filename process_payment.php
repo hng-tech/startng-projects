@@ -42,6 +42,7 @@ if (isset($_GET['txref'])) {
     //Donor details
     $fullName = $resp['data']['custname'];
     $email = $resp['data']['custemail'];
+    $phone = $resp['data']['custphone'];
 
 
     //For tests
@@ -108,5 +109,5 @@ if (isset($_GET['txref'])) {
 
     echo "<script type='text/javascript'>alert('No Transaction Ref provided')</script>";
     echo "<script type='text/javascript'>document.location='failed-page-index.html'</script>";
-    // header('Location: index.php');
+    // header('Location: index.html');
 }

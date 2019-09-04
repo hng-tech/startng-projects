@@ -33,12 +33,12 @@ if (isset($_POST['login'])) {
         $_SESSION['user_id'] = $userId;
         $_SESSION['name'] = $userFullName;
 
+        // header('Location: dashboard.php');
+
         //Redirect to User Dashboard
         echo "<script type='text/javascript'>alert('You Successfully Logged in')</script>";
-        echo "<script type='text/javascript'>
-    document.location = 'dashboard.php'
-</script>";
-        exit(0);
+        echo "<script type='text/javascript'>document.location='dashboard.php'</script>";
+        // exit(0);
     }
 }
 
@@ -103,9 +103,15 @@ if (isset($_POST['signup'])) {
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Volunteer.ng is a platform for NGOs and other entities in need of funding and manpower from the general public. Registered organizations will be able to create projects and receive funding or volunteer applications from other users.">
+    <meta name="keywords" content="donation, funding, volunteer, give out, crowdfunding, help" />
+    <meta property="og:title" content="VolunteerNG" />
+    <meta property="og:image" content="https://res.cloudinary.com/judejax/image/upload/v1567639575/volunteerNG_green_background.png" />
+    <meta property="og:description" content="Volunteer.ng is a platform for NGOs and other entities in need of funding and manpower from the general public. Registered organizations will be able to create projects and receive funding or volunteer applications from other users." />
     <title>Volunteer NG | Sign In / Sign Up</title>
     <link rel="stylesheet" href="./css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/all.min.css" rel="stylesheet" />
@@ -122,17 +128,7 @@ if (isset($_POST['signup'])) {
                 <form action="" method="POST">
                     <!--Signup-->
                     <h2>Create Account</h2>
-                    <!-- <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div> -->
                     <span>Enter Information about your cause</span>
-                    <!--<input type=" " placeholder="Reason for Donation" />-->
-                    <!-- <select name="cars" required>
-                        <option value="Individual">Individual</option>
-                        <option value="Organization">Organization</option>
-                    </select> -->
                     <input type="text" name="name" placeholder="Full Name" required />
                     <input type="email" name="email" placeholder="Email" required />
                     <input type="password" name="password" placeholder="Password" required />
@@ -147,11 +143,6 @@ if (isset($_POST['signup'])) {
                 <form action="" method="POST">
                     <!--SignIn-->
                     <h1>Sign in</h1>
-                    <!-- <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div> -->
                     <span>or use your account</span>
                     <input type="email" name="email" placeholder="Email" />
                     <input type="password" name="password" placeholder="Password" />

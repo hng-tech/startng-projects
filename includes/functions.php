@@ -4,7 +4,7 @@
 function isLoggedIn()
 {
     if (empty($_SESSION['user_id'])) :
-        header('Location: ../index.php');
+        header('Location: ../index.html');
     endif;
 }
 

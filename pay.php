@@ -4,8 +4,8 @@ require('includes/functions.php');
 require('includes/db_connection.php');
 
 
-if (!isset($_GET['user']) || !isset($_GET['email']) || !isset($_GET['amount']) || !isset($_GET['firstname']) || !isset($_GET['lastname'])) {
-  header('Location: index.php');
+if (!isset($_GET['user']) || !isset($_GET['email']) || !isset($_GET['amount']) || !isset($_GET['firstname']) || !isset($_GET['lastname']) || !isset($_GET['phone'])) {
+  header('Location: index.html');
   exit(0);
 }
 
@@ -14,6 +14,7 @@ $email = $_GET['email'];
 $amount = (int) $_GET['amount'];
 $first_name = $_GET['firstname'];
 $last_name = $_GET['lastname'];
+$phone = (int) $_GET['phone'];
 
 
 // $query = mysqli_query($con, "SELECT * FROM users WHERE user_id = '$userId'") or die(mysqli_error($con));
@@ -52,6 +53,7 @@ curl_setopt_array($curl, array(
     'customer_firstname' => $first_name,
     'customer_lastname' => $last_name,
     'customer_logo' => $logo,
+    'customer_phone' => $phone,
     'pay_button_text' => $button,
     'custom_title' => $title,
     'currency' => $currency,

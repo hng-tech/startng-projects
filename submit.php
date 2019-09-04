@@ -42,9 +42,15 @@ if (isset($_POST['submit'])) {
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Volunteer.ng is a platform for NGOs and other entities in need of funding and manpower from the general public. Registered organizations will be able to create projects and receive funding or volunteer applications from other users.">
+    <meta name="keywords" content="donation, funding, volunteer, give out, crowdfunding, help" />
+    <meta property="og:title" content="VolunteerNG" />
+    <meta property="og:image" content="https://res.cloudinary.com/judejax/image/upload/v1567639575/volunteerNG_green_background.png" />
+    <meta property="og:description" content="Volunteer.ng is a platform for NGOs and other entities in need of funding and manpower from the general public. Registered organizations will be able to create projects and receive funding or volunteer applications from other users." />
     <title>Volunteer NG | Submit Task</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/login.css" />
@@ -69,64 +75,60 @@ if (isset($_POST['submit'])) {
 
                 <div id="login">
                     <h2>Don't submit this form is your name is not on this <a target="_blank" href="https://docs.google.com/spreadsheets/d/1IT-zTY_AaC_vaBa1QTNoQ9coP_3dZE97xaoPgl9GpUg/edit?usp=sharing"> list! </a></h2>
-                    <form action="" method="post" autocom
-                    
-                    
-
-                        <div class="field-wrap">
-                            <label>
-                                Fullname
-                            </label>
-                            <input type="text" required autocomplete="off" name="name" />
-                        </div>
-
-                        <div class="field-wrap">
-                            <label>
-                                Cloudinary Image Link
-                            </label>
-                            <input type="text" required autocomplete="off" name="cloudinary" />
-                        </div>
-
-                        <div class="field-wrap">
-                            <label>
-                                Hosted CV Link
-                            </label>
-                            <input type="text" required autocomplete="off" name="cv" />
-                        </div>
-
-                        <div class="field-wrap">
-                            <label>
-                                Contribution to Team task (short pls)
-                            </label>
-                            <input type="text" required autocomplete="off" name="contribution" />
-                        </div>
-
-                        <div class="field-wrap">
-                            <label>
-                                Code on Tracking sheet (e.g shn00012)
-                            </label>
-                            <input type="text" required autocomplete="off" name="code" />
-                        </div>
-
-                        <div class="field-wrap">
-                            <label>
-                                Track (Front end, Backend, UI etc)
-                            </label>
-                            <input type="text" required autocomplete="off" name="track" />
-                        </div>
-
-                        <button class="button button-block" name="submit">Submit</button>
-
-                    </form>
-
+                    <form action="" method="post" autocom <div class="field-wrap">
+                        <label>
+                            Fullname
+                        </label>
+                        <input type="text" required autocomplete="off" name="name" />
                 </div>
-                <div id="signup">
 
-
+                <div class="field-wrap">
+                    <label>
+                        Cloudinary Image Link
+                    </label>
+                    <input type="text" required autocomplete="off" name="cloudinary" />
                 </div>
-            </div><!-- tab-content -->
 
-        </div> <!-- /form -->
+                <div class="field-wrap">
+                    <label>
+                        Hosted CV Link
+                    </label>
+                    <input type="text" required autocomplete="off" name="cv" />
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Contribution to Team task (short pls)
+                    </label>
+                    <input type="text" required autocomplete="off" name="contribution" />
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Code on Tracking sheet (e.g shn00012)
+                    </label>
+                    <input type="text" required autocomplete="off" name="code" />
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Track (Front end, Backend, UI etc)
+                    </label>
+                    <input type="text" required autocomplete="off" name="track" />
+                </div>
+
+                <button class="button button-block" name="submit">Submit</button>
+
+                </form>
+
+            </div>
+            <div id="signup">
+
+
+            </div>
+        </div><!-- tab-content -->
+
+    </div> <!-- /form -->
     </div>
 </body>
 

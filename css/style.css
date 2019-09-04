@@ -134,8 +134,8 @@ header a:hover {
 
 /* Main */
 #main {
-    min-height: 400px;
-    background: url("../images/holding_hands.jpg") no-repeat 0 -220px;
+    min-height: 600px;
+    background: url("https://res.cloudinary.com/dprmplqfj/image/upload/v1567631135/VolunteersNG/holding_hands_fk6llh.jpg") no-repeat 0 -320px;
     text-align: center;
     background-size: cover;
     color: #ffffff;
@@ -165,8 +165,8 @@ header a:hover {
 
 /* What we Do */
 #what-we-do {
-    min-height: 400px;
-    background: url("../images/african_school_kids.jpg") no-repeat 0 -200px;
+    min-height: 500px;
+    background: url("../images/african_school_kids.jpg") no-repeat 0 -220px;
     text-align: center;
     background-size: cover;
     color: #ffffff;
@@ -189,7 +189,7 @@ header a:hover {
     /* padding: 10px; */
     padding: 5px;
     padding-bottom: 10px;
-    margin: 4px;
+    margin: 10px;
     border: 1px #ccfccb solid;
     border-radius: 5px;
 
@@ -218,8 +218,8 @@ header a:hover {
 }
 
 #boxes .box img {
-    width: 180px;
-    height: 90px;
+    width: 100%;
+    height: 200px;
 }
 
 .box-bottom-text {
@@ -475,4 +475,38 @@ article#about-col {
 
 .white-fa {
     color: #ffffff;
+}
+
+.dashboard-text {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* Donations */
+#donations {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#donations td,
+#donations th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#donations tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#donations tr:hover {
+    background-color: #ddd;
+}
+
+#donations th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
 }
