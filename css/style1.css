@@ -21,6 +21,7 @@ body {
   font-size: 20px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  margin: 0;
 }
 
 /* ------------------------------------------------ */
@@ -918,21 +919,30 @@ header {
 
 .underbar { 
   width: 50px; 
-  border-bottom: 2px solid #FFFFFF; }
+  border-bottom: 2px solid #FFFFFF; 
+}
 
 .foot-content { 
   margin-top: 20px; 
 }
 
-.foot-content, .design-info { 
-  font: 400 1em "Open Sans", sans-serif; 
+.foot-content, .foot-content p, .foot-info { 
+  font: 300 1em "Open Sans", sans-serif; 
+}
+
+.foot-about p {
+  width: 70%;
+}
+
+.foot-links p {
+  margin-bottom: 5px;
 }
 
 .foot-about, .foot-links, .foot-question { 
   float: left; 
 }
 
-.foot-about { 
+.foot-about, .foot-question { 
   width: 40%; 
 }
 
@@ -940,12 +950,14 @@ header {
   width: 20%;
 }
 
-.foot-question { 
-  width: 40%; 
+.foot-question-row { 
+  display: flex;
+  display: -webkit-flex; 
+  margin-bottom: 10px; 
 }
 
-.foot-about .foot-content { 
-  width: 60%; 
+.foot-contact-info { 
+  margin-left: 10px; 
 }
 
 .clear::after { 
@@ -966,7 +978,7 @@ header {
 /* RESPONSIVE footer */
 
 /*For tablets*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
   .footer {
     padding: 30px;
   }
@@ -991,11 +1003,13 @@ header {
     padding: 20px;
   }
 
-  .foot-about, .foot-links, .foot-question, .foot-about .foot-content { 
+  .foot-about, .foot-links, .foot-question { 
     float: none;
     width: 100%;
+    margin-bottom: 5px;
   }
 }
+
 /*===============================================================================
 /*SECTION 2 OF RESPONSIVE CONTACT-US PAGE*/
 /*===================================================================================*/
