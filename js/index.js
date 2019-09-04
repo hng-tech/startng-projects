@@ -1,19 +1,15 @@
-<<<<<<< HEAD
+
 // Team page
 
 let container = document.querySelector("#profile")
 
-=======
+
 let team_row = document.querySelector(".team-row")
->>>>>>> origin/gamma
 
 const displayProfile = (data) => {
   data.forEach(member => {
 
-<<<<<<< HEAD
     let team_row = document.createElement("div")
-=======
->>>>>>> origin/gamma
     let team_column = document.createElement("div")
     let unhover_img = document.createElement("div")
     let img = document.createElement("img")
@@ -26,20 +22,18 @@ const displayProfile = (data) => {
     let resume = document.createElement("a")
     let i = document.createElement("i")
 
-<<<<<<< HEAD
     team_row.className = "row1"
     team_column.className = "team_column"
 
     unhover_img.className = "unhover_img"
 
     img.src = member.cloudinary
-=======
 
     team_column.className = "team_column"
     unhover_img.className = "unhover_img"
     img.src = member.cloudinary
 
->>>>>>> origin/gamma
+
     unhover_img.appendChild(img)
     team_column.appendChild(unhover_img)
 
@@ -59,7 +53,7 @@ const displayProfile = (data) => {
     resume.href = member.resume
     li.appendChild(resume)
     ul.appendChild(li)
-<<<<<<< HEAD
+
     team_column.appendChild(ul)
 
     let clear = document.createElement("div")
@@ -68,17 +62,15 @@ const displayProfile = (data) => {
 
     team_row.appendChild(team_column)
     container.appendChild(team_row)
-=======
 
     team_column.appendChild(ul)
     team_row.appendChild(team_column)
->>>>>>> origin/gamma
+
+    team_column.appendChild(ul)
+    team_row.appendChild(team_column)
   })
 }
 
 displayProfile(data);
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/gamma
 // Form validation

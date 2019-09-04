@@ -213,7 +213,7 @@ h4 {
   margin-top: -20px;
 }
 
-​ h2:after {
+ h2:after {
   display: block;
   height: 3px;
   background-color: #ff8121;
@@ -222,14 +222,14 @@ h4 {
   margin-top: 10px;
 }
 
-​ .partners>h2:after {
+.partners>h2:after {
   width: 50px;
   margin-left: 650px;
   margin-top: 5px;
   font-size: 32px;
 }
 
-​ .logos>img {
+.logos>img {
   margin-right: 20px;
 }
 
@@ -237,7 +237,7 @@ h4 {
   margin-bottom: 5px;
 }
 
-​ .logos>img:nth-child(2) {
+.logos>img:nth-child(2) {
   margin-bottom: 5px;
 }
 
@@ -253,9 +253,5 @@ h4 {
 }
 
 .bg {
-<<<<<<< HEAD
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Kinshasa.png);
-=======
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/Kinshasa.png);
->>>>>>> origin/gamma
 }
