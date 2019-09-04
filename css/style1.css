@@ -656,7 +656,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -875,6 +875,10 @@ header {
   margin-right: auto;
 }
 
+.donation5{
+  color: #FE982D;
+}
+
 .volunteer5 {
   background-color: #fe982d;
   color: white;
@@ -1020,7 +1024,7 @@ header {
   font-weight: normal;
   letter-spacing: 0;
   word-spacing: 0;
-  font-size: normal;
+  font-size: unset;
 }
 
 [contact_text] table{
