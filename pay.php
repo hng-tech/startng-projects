@@ -51,7 +51,7 @@ curl_setopt_array($curl, array(
     'currency' => $currency,
     'txref' => $txref,
     'PBFPubKey' => $PBFPubKey,
-    'redirect_url' => $redirect_url
+    'redirect_url' => $redirectUrl
 
   ]),
   CURLOPT_HTTPHEADER => [
