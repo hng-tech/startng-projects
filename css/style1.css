@@ -866,7 +866,24 @@ header {
   text-align: center;
   font-size: large;
   letter-spacing: 1px;
+   margin-top: 10px;
+  margin-bottom: 10px;
 }
+/*edited section 5 by @Joe Freely*/
+
+.donation5 {
+  text-align: center;
+  padding: 50px 50px;
+  border:none;
+  color: black;
+}
+
+.volunteer5 {
+  text-align: center;
+  padding: 50px 50px;
+}
+
+
 
 /* set image to center */
 .sec5 img {
@@ -894,6 +911,7 @@ header {
 }
 
 /* end of section5 */
+
 
 /* ------------------------------------------------ */
 /* Footer styles */
