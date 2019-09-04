@@ -14,7 +14,7 @@ flex-direction: column;
 float: right;
 }
 body {
-  background-image: url("Kinshasa.png");
+  background-image: url("../img/Kinshasa.png");
   background-repeat: no-repeat;
   background-size:1920px 700px; 
   background-position-x: 0px;
@@ -91,7 +91,7 @@ h2{
   font-family: 'Dosis', medium, sans-serif;
   text-align:center;
   
-  float:center;
+  float: inherit;
 }
 
 .column{
