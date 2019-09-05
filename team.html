@@ -16,23 +16,49 @@
 
 <body id="t_body">
     <header>
+        <div>
+            <a href="index.html">
+            <img id="logo" src="https://res.cloudinary.com/nkechi-christabel/image/upload/v1567206514/otnnkwoslqs04bzmln5d.png" alt="Logo"></a>
+        </div> 
+    
+        <nav id="navbar">
+        <div class="nav-cont-small" onclick="hamburgerMenu(this)">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+        </div>
+        <div class="navSmall">
+            <div><a href="about.html" class="nav-links">About</a></div>
+            <div><a href="https://forms.gle/97kHEfjkLAZzqHWE9" class="nav-links" target=_blank>Membership</a></div>
+            <div><a href="team.html" class="nav-links">Team</a></div>
+            <div><a href="contact.html" class="nav-links">Contact Us</a></div>
+        </div>
+        <ul id="nav-container">
+            <li><a href="about.html" class="nav-links">About</a></li>
+            <li><a href="https://forms.gle/97kHEfjkLAZzqHWE9" class="nav-links" target=_blank>Membership</a></li>
+            <li><a href="#" class="nav-links current">Team</a></li>
+            <li><a href="projects.html" class="nav-links">Projects</a></li>
+            <li><a href="contact.html" class="nav-links">Contact Us</a></li>
+        </ul>
+        </nav>
+        
         <!--GIFTAPAD LOGO -->
-        <div class="container">
+        <!-- <div class="container">
             <div id="giftapadlogo">
                 <a href="index.html"><img class src="https://res.cloudinary.com/ibrahimygana/image/upload/v1567158561/START%20NG/ny4kqb4jzs7hdcnoklxm.png" alt="giftapad logo">
             </div>
 
-            <!--NAV BAR-->
-            <nav>
+            <!--NAV BAR
+            
                 <ul>
-                    <!--href = # since it is the current page. modified by Ezeko-->
+                    href = # since it is the current page. modified by Ezeko
                     <li><a href="about.html">About</a></li>
                     <li><a href="https://forms.gle/97kHEfjkLAZzqHWE9">Membership</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li class="current"><a href="#">Team</a></li>
                 </ul>
-            </nav>
-        </div>
+            
+        </div> -->
     </header>
 
     <main>
@@ -651,6 +677,9 @@ v1566545068/tasha_jnzgoa.jpg" alt="Natashadibie picture " />
             <figcaption>
                 <p>Gospel Okpara</p>
                 <p>Backend</p>
+                <p>I worked on the responsiveness of the pages and hamburger menu</p>
+                <p><a href="https://ebugo.github.io/gospel-cv/index.html">More Details</a></p>
+                <p><strong>SHN CODE: 01744</strong></p>
             </figcaption>
         </div>
         <!--end of member's profile-->
@@ -917,7 +946,25 @@ v1566545068/tasha_jnzgoa.jpg" alt="Natashadibie picture " />
         </div>
         <p class="reg"><a href="index.html">GiftAPad</a> copyright 2019. All rights resreved.</p>
     </footer>
+
     <script src="https://kit.fontawesome.com/64ab2a0281.js"></script>
+
+    <!-- Hamburger menu script added here -->
+    ​<script>
+        var acc = document.getElementsByClassName("nav-cont-small");
+var i;
+        for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("new");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+    </script>
 </body>
 
 </html>
