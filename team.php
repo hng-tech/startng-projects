@@ -110,7 +110,7 @@ $count = mysqli_num_rows($query);
             <h3><?php echo $fullname ?></h3>
             <p>
               Code: <b><?php echo $code ?></b> | Track: <b><?php echo $track ?></b> <br><br>
-              Contribution: <?php echo $contribution ?>
+              Contribution: <span style="font-size: 13px;"> <?php echo $contribution ?> </span>
             </p>
             <br>
             <a href="<?php echo $link; ?>" style="color: green; text-align: center"><b>More Details..</b></a>
