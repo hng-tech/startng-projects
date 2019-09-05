@@ -11,36 +11,91 @@ body {
   overflow-x: hidden;
 }
 
-/* Main navi */
-.main-nav {
-  align-self: center;
-  float: inherit;
-  list-style: none;
-  margin-top: 55px;
-  margin-right: 100px;
+/*UTILITY*/
+.u-1 {
+  cursor: pointer;
 }
-#line1{
-  font-size:15px;
+
+img:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }
-#line2{
-  font-size:15px;
+/* HEADER RE-DESIGN */
+#img {
+  width: 20%;
+  height: 10%;
 }
-#line3{
-  font-size:15px;
+
+#line1 {
+  font-size: 20px;
 }
-#line4{
-  font-size:15px;
+#line2 {
+  font-size: 20px;
 }
-#line5{
-  font-size:15px;
+#line3 {
+  font-size: 20px;
+}
+#line4 {
+  font-size: 20px;
+}
+#line5 {
+  font-size: 20px;
+}
+span {
+  color: #f0981d;
+}
+.location {
+  color: white;
 }
 header #donateBtn {
   font-size: 25px;
   background-color: #f0981d;
   border-color: #f0981d;
-  color:white;
+  color: white;
   width: 150%;
   border-radius: 40px;
+}
+
+/* END OF HEADER RE-DESIGN */
+
+/* ------------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------------ */
+
+header button {
+  font-size: 30px;
+  background-color: #f0981d;
+  border-color: #f0981d;
+  width: 150%;
+  border-radius: 40px;
+}
+
+header span {
+  color: #f0981d;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/testimonialbg.png);
+
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.logo {
+  height: 62px;
+  width: auto;
+  float: left;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+/* Main navi */
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+  margin-right: 100px;
 }
 
 .main-nav li {
@@ -54,7 +109,7 @@ header #donateBtn {
 .main-nav li a:link,
 .main-nav li a:visited {
   padding: 8px 0;
-  color: #000000;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 90%;
@@ -80,34 +135,44 @@ header #donateBtn {
   font-size: 150%;
 }
 
-.header-text-box span {}
-
-.orange-text {
-  color: #e67e22;
-}
-
-
-#testimonials{
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
-
-}
-
-/*UTILITY*/
-.u-1 {
-  cursor: pointer;
-}
-
-img:hover {
-  cursor: pointer;
-  opacity: 0.6;
-}
 /*END OF UTILITY*/
 .container {
   width: 1181px;
   margin: 0 auto;
   width: 100%;
 }
+
+#landing-inner ul {
+  position: absolute;
+  top: 350px;
+  left: 704px;
+  right: 102px;
+}
+#landing-inner ul li {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  list-style: none;
+}
+
+#landing-inner ul li:nth-child(1) {
+  font-size: 80px;
+  line-height: 30px;
+  color: #fff8f8;
+}
+#landing-inner ul li:nth-child(2) {
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff8f8;
+}
+
+#landing-inner ul li:nth-child(3) {
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 30px;
+  color: #ff8121;
+}
+
 #wrap {
   width: 1181px;
   display: flex;
@@ -138,18 +203,18 @@ img:hover {
 }
 
 .testimonials-grid {
-  position: absolute;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
+  margin-bottom: 3rem !important;
 }
 img {
   display: inline-block;
   height: 50px;
   width: 50px;
   left: 66px;
-  top: 810px;
+  top: 810;
   border-radius: 50%;
   transition: all 0.5s ease-out;
 }
@@ -207,9 +272,85 @@ img {
   line-height: 25px;
   color: #000000;
 }
+.footer {
+  background-color: #363434;
+  color: white;
+  padding: 50px 80px 10px;
+}
 
+.footer a:link,
+.footer a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:active {
+  color: #ff8121;
+}
+
+.foot-title {
+  font: 300 1.5em "Dosis", sans-serif;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.underbar {
+  width: 50px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.foot-content {
+  margin-top: 20px;
+}
+
+.foot-content,
+.design-info {
+  font: 400 1em "Open Sans", sans-serif;
+}
+
+.foot-about,
+.foot-links,
+.foot-question {
+  float: left;
+}
+
+.foot-about {
+  width: 40%;
+}
+
+.foot-links {
+  width: 20%;
+}
+
+.foot-question {
+  width: 40%;
+}
+
+.foot-about .foot-content {
+  width: 60%;
+}
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.foot-info {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#team-stockholm,
+.material-icons {
+  color: #ff8121;
+}
+
+/*MEDIA QURIES*/
 @media screen and (max-width: 767px) {
   .testimonials-grid {
+    margin: 0 auto;
     grid-template-areas:
       "row1 " "row2"
       "row3 " "row4";
@@ -236,5 +377,21 @@ img {
   }
   .title {
     margin-left: 27px;
+  }
+  #landing {
+    height: 500px;
+  }
+  #landing-inner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  #landing-inner ul li:nth-child(1) {
+    font-size: 50px;
+  }
+  #landing-inner ul li:nth-child(3) {
+    font-size: 60px;
   }
 }

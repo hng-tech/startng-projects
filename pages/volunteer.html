@@ -9,6 +9,23 @@
 <script src="../js/volunteer_form_validation.js"></script>
 </head>
 <body onLoad="document.registration.userid.focus();">
+<header>
+  <nav>
+    <div class="row">
+      <ul class="main-nav">
+        <li id="line1"><a href="../pages/index.html">Home</a></li>
+        <li id="line2"><a href="../pages/team.html">About</a></li>
+        <li id="line3"><a href="../pages/gallery.html">Gallery</a></li>
+        <li id="line4"><a href="../pages/testimonial.html">Testimonials</a></li>
+        <li id="line5"><a href="../pages/contactUs.html">Contact Us</a></li>
+        <li>
+          <input type="button" id="donateBtn"
+                 onclick="location.href='https://rave.flutterwave.com/donate/5hwqw1jravwl';" value="Donate">
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
 <div id="frame">    
     <div id="formheader">
@@ -21,10 +38,10 @@
                <li><label for="Fullname">Fullname:</label></li>
                 <li><input type="text" name="fname" size="50" /></li>
                 
-                <li><label for="address">Address:</label></li>
+                <li><label>Address:</label></li>
                 <li><input type="text" name="address" size="50" /></li>
                 
-                <li><label for="country">Country:</label></li>
+                <li><label>Country:</label></li>
                 <li>
                     <select name="country">
                         <option selected="" value="Default">(Please select a country)</option>
@@ -34,15 +51,14 @@
                     </select>
                 </li>
                 <br/>
-                <li><label for="email">E-mail:</label></li>
+                <li><label>E-mail:</label></li>
                 <li><input type="text" name="email" size="50" /></li>
-                
+          
                 <li><label id="gender">Sex:</label></li>
                 <li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
                 <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
                 
-                
-                <li><label for="zip">ZIP Code:</label></li>
+                <li><label>ZIP Code:</label></li>
                 <li><input type="text" name="zip" /></li>
                 
                 <li><label for="note">Note:</label></li>
