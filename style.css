@@ -126,10 +126,11 @@ a:hover{
   margin: 20px 0 20px 20px; /* Adjusted logo position (Angela) */
 }
 
-#banner{
+/* #banner{
   margin-top: 10px;
-  height: 100vh;
+  height: 100vh;  padding: 2em;
 }
+ */
 
 #img-container{
   margin-top: 10px;
@@ -205,7 +206,7 @@ a:hover{
         text-align: center;
         min-width: 100%;
         color: 	#FFFFFF;
-        padding: 30px 0 20px;
+        padding: 7em 0 2em;
 }
 
 h1{
