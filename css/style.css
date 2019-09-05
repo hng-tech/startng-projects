@@ -14,7 +14,7 @@ flex-direction: column;
 float: right;
 }
 body {
-  background-image: url("../img/Kinshasa.png");
+  background-image: url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567671695/team_stockholm/Kinshasa_y72tti.png);
   background-repeat: no-repeat;
   background-size:1920px 700px; 
   background-position-x: 0px;
@@ -48,8 +48,7 @@ ul {
   
 }
 #about{
-<<<<<<< HEAD
-	background-color:orange; #ffb833;
+	background-color:orange;
 	color: #fff;
 
 }
