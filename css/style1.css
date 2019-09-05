@@ -162,7 +162,7 @@ header span {
 header {
 	display:flex;
  	flex-wrap: wrap;
-  background-image: url(../img/header-background-image1.png);
+  background-image: url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567546764/team_stockholm/header-background-image1_fyqisp.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -370,8 +370,8 @@ img[about_image] {
 
 
 #testimonials{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567508173/team_stockholm/IMG-20190901-WA0007_ehffcb.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567508173/team_stockholm/IMG-20190901-WA0007_ehffcb.jpg);
 }
 
 /* ----------------------------------------------- */
@@ -561,7 +561,7 @@ margin-top: -130px;
 .about-main-img {
   width: 500px;
   height: 370px;
-  background-image: url(../img/about-us-img.png);
+  background-image: url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567540055/team_stockholm/about-us-img_i3kqfi.png);
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -662,8 +662,8 @@ hr{
 /* ----------------------------------------------- */
 
 header {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero3.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero3.png);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567328022/team_stockholm/hero3_p1k6qu.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567328022/team_stockholm/hero3_p1k6qu.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -743,8 +743,8 @@ header {
 
 
 #testimonials{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567543996/team_stockholm/kids2_gv1af7.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567543996/team_stockholm/kids2_gv1af7.png);
 }
 
 @media screen and (max-width: 550px) {
