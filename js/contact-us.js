@@ -92,6 +92,9 @@ contactForm.enquiry.addEventListener("blur", enquiryValidation, false);
 
 function submitValidation(){
 
+//THIS event.preventDefault() TO AVOID BROWSER FROM LOADING AFTER CLICK OF SUBMIT BUTTON
+
+   event.preventDefault();
  if (contactForm.fullName.value === "" || contactForm.fullName.value === null) {
 
  	contactForm.fullName.style.borderColor = "red";
