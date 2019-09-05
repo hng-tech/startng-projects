@@ -88,6 +88,7 @@ function enquiryValidation(){
 
 contactForm.enquiry.addEventListener("blur", enquiryValidation, false);
 
+// VALIDATION AFTER CLICKING ON SUBMIT BUTTON
 
 function submitValidation(){
 
