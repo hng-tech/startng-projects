@@ -9,6 +9,7 @@
     height: 5px;
 }
 
+
 /* TEAM MEMBERS SECTION*/
 
 #members {
@@ -76,6 +77,7 @@
     font-size: 16px;
 }
 
+
 /*Team Members Image Effect */
 
 .hover_img {
@@ -94,6 +96,7 @@
     color: rgb(226, 220, 220);
 }
 
+
 /*TEAM SOCIAL MEDIA LINKS */
 
 #members li {
@@ -111,12 +114,14 @@
     color: rgba(0, 0, 0, 0.7);
 }
 
+
 /* ROWS ARRANGEMENT (4 BY 4) */
 
 .team-row .team_column,
 .team_column {
     padding-bottom: 40px;
 }
+
 
 /*RESPONSIVENESS*/
 
@@ -222,7 +227,7 @@ font-family: "Dosis", sans-serif;
     margin-top: -20px;
 }
 
- h2:after {
+h2:after {
     display: block;
     height: 3px;
     background-color: #ff8121;
