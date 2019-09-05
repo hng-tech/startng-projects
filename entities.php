@@ -96,7 +96,7 @@ $count = mysqli_num_rows($query);
                 <div class="shadow">
                     <div class="entity">
                         <div class="col-2">
-                            <img src="https://res.cloudinary.com/judejax/image/upload/v1567639756/avatar.png">
+                            <img src="https://res.cloudinary.com/judejax/image/upload/v1567639756/avatar.png" alt="<?php echo $row['name'] ?>" title="<?php echo $row['name'] ?>">
                         </div>
                         <div class="col-10">
                             <span class="entity-text"> <?php echo $row['name'] ?> </span> <br>
@@ -137,26 +137,25 @@ $count = mysqli_num_rows($query);
                 <img src="https://res.cloudinary.com/judejax/image/upload/v1567645699/volunteerNG_white_full.png" alt="Volunteer Ng logo" title="volunteer ng" height="100" width="130"> <br>
                 <a href=""><i class="fa fa-phone"></i>+234 7071234567</a>
                 <a href=""><i class="fa fa-envelope"></i>volunteerng@gmail.com</a>
-                <a href=""><i class="fas fa-map-marker"></i>Find Us</a>
+                <a href="https://goo.gl/maps/qhUnDeF5drZUdH83A" target="_blank"><i class="fas fa-map-marker"></i>Find
+                    Us</a>
             </div>
             <div class="col-3">
                 <h3>Donations</h3>
                 <ul>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Food Donation</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Money Donation</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Water Supply</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Outfit Donation</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Food Item Donation</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Medical Donations</li>
+                    <li><a href="material-gift.html"> <i class="fas fa-arrow-right"></i>&nbsp; Gift Donation</a></li>
+                    <li><a href="entities.php"><i class="fas fa-arrow-right"></i>&nbsp; Money Donation</a></li>
+                    <li><a href="render-a-service.html"><i class="fas fa-arrow-right"></i>&nbsp; Offer a Service</a>
+                    </li>
+                    <li><a href="sign-in.php"><i class="fas fa-arrow-right"></i>&nbsp; Request for a Donation</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-3">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Our Team</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Testimonies</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; Gallery</li>
-                    <li><i class="fas fa-arrow-right"></i>&nbsp; About Us</li>
+                    <li><a href="team.php"><i class="fas fa-arrow-right"></i>&nbsp; Our Team</a></li>
+                    <li><a href="about.html"><i class="fas fa-arrow-right"></i>&nbsp; About Us</a></li>
             </div>
             <div>
                 <h3>Stay Updated</h3>

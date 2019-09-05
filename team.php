@@ -52,7 +52,7 @@ $count = mysqli_num_rows($query);
   <header>
     <div class="second-nav">
       <div id="branding">
-        <img src="./images/flogo.png" alt="Volunteeer Logo" title="Volunteer NG" width="120" height="70" />
+        <img src="https://res.cloudinary.com/judejax/image/upload/v1567639575/logo.png" alt="Volunteeer Logo" title="Volunteer NG" width="165" height="70" />
       </div>
       <nav col-6>
         <ul>
@@ -79,10 +79,10 @@ $count = mysqli_num_rows($query);
       needless to say, that individuality counts but teamwork dynamites."
     </p>
     <br />
-    <h5>
+    <h4>
       This wouldn't have been possible with only the Visionaire. Cheers to a
       great team!
-    </h5>
+    </h4>
   </section>
 
   <section id="teams">
@@ -103,6 +103,7 @@ $count = mysqli_num_rows($query);
           $contribution = $row["contribution"];
           $code = $row["code"];
 
+
           ?>
           <div class="member">
             <img src="<?php echo $cloudinary ?>" alt="<?php echo $fullname ?>" /> <br />
@@ -114,7 +115,7 @@ $count = mysqli_num_rows($query);
             <br>
             <a href="<?php echo $link; ?>" style="color: green; text-align: center"><b>More Details..</b></a>
           </div>
-      <?php }
+      <?php  }
       }
 
       ?>
