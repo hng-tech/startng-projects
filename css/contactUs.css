@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    
+}
+
+h1 {
+    
+    color: #FE8121
+    
+}
+
+hr{
+    width: 100px;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://res.cloudinary.com/thecodingarchitect/image/upload/v1567601313/images__4__ljpo74.jpg);
+    background-size: cover;
+    min-height: 500px;
+   
+    
+    
+}
+
+.banner-text{
+    font-size: 300%;
+}
+
+
+
+.header {
+    display: flex;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-left: 100px;
+}
+
+.box-2 #donateBtn {
+    font-size: 25px;
+    background-color: #f0981d;
+    border-color: #f0981d;
+    color:white;
+    width: 20%;
+    border-radius: 40px;
+  }
+
+.box-1 {
+    flex: 1;
+    margin-top: 40px;
+}
+
+.box-2 ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+.box-2 li{
+    display: inline
+    
+    
+}
+
+
+.box-2 a:link, .box-2 a:visited {
+    padding-right: 25px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: lighter;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+
+
+.box-2 a:hover, .box-2 a:active {
+    border-bottom: 2px solid #e67e22;
+    color: #e67e22;
+}
+
+.box-2 {
+    flex: 2;
+    text-align: right;
+}
+
+.box-3 {
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+.box-3 p{
+    color: white;
+}
+
+.container {
+    padding: 5em;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    padding-bottom: 1em;
+}
+
+.box-4 {
+    padding-top: 2em;
+}
+
+.box-4 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box-4 li {
+    display: inline;
+    padding-left: 15px;
+}
+
+.wrapper > * {
+    padding: 1em;
+}
+
+.contact-info h3, .contact-info p, .contact-info ul, .box-4 p, .box-4 ul {
+    margin: 0 0 1rem;
+}
+
+.contact-info img{
+    padding-right: 5px;
+
+}
+
+#logo-img{
+    width: 80%;
+    height: 80%;
+}
+
+/* .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+} */
+
+.contact form input, .contact form textarea, .contact form button {
+    
+    width: 100%;
+    padding: 1em;
+    
+}
+
+.contact form button {
+    background: #000000;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact form button:hover, .contact form button:focus {
+    background: grey;
+    outline: 0;
+}
+
+
+.contact #error_msg {
+	background: red;
+	color: #fff;
+	padding: 0px;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+
+
+.footer { 
+    background-color: #363434;
+    color: white; 
+    padding: 50px 80px 10px; 
+  }
+  
+  .footer a:link, .footer a:visited { 
+    color: #FFFFFF; 
+    text-decoration: none; 
+  }
+  
+  .footer a:hover, .footer a:active { 
+    color: #FF8121; 
+  }
+  
+  .foot-title { 
+    font: 300 1.5em "Dosis", sans-serif;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+  
+  .underbar { 
+    width: 50px; 
+    border-bottom: 2px solid #FFFFFF; }
+  
+  .foot-content { 
+    margin-top: 20px; 
+  }
+  
+  .foot-content, .design-info { 
+    font: 400 1em "Open Sans", sans-serif; 
+  }
+  
+  .foot-about, .foot-links, .foot-question { 
+    float: left; 
+  }
+  
+  .foot-about { 
+    width: 40%; 
+  }
+  
+  .foot-links { 
+    width: 20%;
+  }
+  
+  .foot-question { 
+    width: 40%; 
+  }
+  
+  .foot-about .foot-content { 
+    width: 60%; 
+  }
+  
+  .clear::after { 
+    content: ""; 
+    display: table; 
+    clear: both; 
+  }
+  
+  .foot-info { 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  
+  #team-stockholm, .material-icons { 
+    color: #FF8121; 
+  }
+  
+  /* RESPONSIVE footer */
+  
+  /*For tablets*/
+  @media only screen and (max-width: 1000px) {
+    .footer {
+      padding: 30px;
+    }
+  
+    .foot-about { 
+      width: 35%; 
+    }
+  
+    .foot-links { 
+      width: 20%;
+    }
+  
+    .foot-question { 
+      width: 45%; 
+    }
+  
+  }
+  
+  /*For small displays and smartphones*/
+  @media only screen and (max-width: 600px) {
+    .footer {
+      padding: 20px;
+    }
+  
+    .foot-about, .foot-links, .foot-question, .foot-about .foot-content { 
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+@media(min-width:700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+}
