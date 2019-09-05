@@ -11,6 +11,47 @@ body {
   overflow-x: hidden;
 }
 
+.header1 {
+  display:flex;
+  flex-wrap: wrap;
+  background-size: contain;
+  max-height: 120px;
+  background-position: right;
+  height: 100vh;
+  align-items: stretch;
+  alignment: right;
+  background-attachment: fixed;
+  justify-content: space-evenly;
+}
+
+#homeBtn{
+  background-color:#ff8121;
+  border: none;
+  color: black;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family:sans-serif;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+#img{
+  height: 62px;
+  width: auto;
+  float: left;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.logo {
+  height: 62px;
+  width: auto;
+  float: left;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
 /* Main navi */
 .main-nav {
   align-self: center;
@@ -104,7 +145,7 @@ img:hover {
 }
 /*END OF UTILITY*/
 .container {
-  width: 1181px;
+/*  width: 1181px;*/
   margin: 0 auto;
   width: 100%;
 }
