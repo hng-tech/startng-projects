@@ -276,10 +276,17 @@ main{
     
     min-height: 3000px;
 }
+    
 }
 figcaption{
     font-weight: bold;
     
+}
+#team-list{
+    height: 300px;
+    width: 200px;
+    margin:2%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 #team-list:hover{
     transform: scale(1.2);
