@@ -13,7 +13,7 @@
 /* TEAM MEMBERS SECTION*/
 
 #members {
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: white;
     text-align: center;
 }
@@ -165,20 +165,28 @@ h4 {
 
 .below-about-us {
     margin: 50px;
+    
+    border-radius: 5px;
 }
 
 .flex-container {
     display: flex;
+
     flex-direction: row;
 }
 
-.flex-container>div {
+/* .flex-container > div {
     margin: 5px;
     padding: 10px;
     font-size: 20px;
     width: 50%;
+} */
+.respond{
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
 }
-
 .about-image {
     margin-top: 50px;
     width: 450px;
@@ -192,18 +200,25 @@ h4 {
     color: black;
 }
 
-#our-partners:after {
+.our-partners {
+font-family: "Dosis", sans-serif;
+}
+.our-partners:after {
     display: block;
     height: 3px;
     background-color: #ff8121;
     content: " ";
-    width: 80px;
+    width: 50px;
     margin-top: 10px;
+    margin-left: 650px;
+    margin-top: 5px;
 }
 
 .welcome {
     color: black;
     font-size: 40px;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
 }
 
 .partners {
@@ -211,7 +226,7 @@ h4 {
     margin-top: -20px;
 }
 
-​ h2:after {
+h2:after {
     display: block;
     height: 3px;
     background-color: #ff8121;
@@ -220,14 +235,14 @@ h4 {
     margin-top: 10px;
 }
 
-​ .partners>h2:after {
+.partners>h2:after {
     width: 50px;
     margin-left: 650px;
     margin-top: 5px;
     font-size: 32px;
 }
 
-​ .logos>img {
+.logos>img {
     margin-right: 20px;
 }
 
@@ -235,7 +250,7 @@ h4 {
     margin-bottom: 5px;
 }
 
-​ .logos>img:nth-child(2) {
+.logos>img:nth-child(2) {
     margin-bottom: 5px;
 }
 
@@ -246,10 +261,11 @@ h4 {
 
 .about-paragraph {
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-family: "Dosis", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Kinshasa.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567671695/team_stockholm/Kinshasa_y72tti.png);
 }

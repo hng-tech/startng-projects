@@ -1,3 +1,4 @@
+
 .logo{
  width:355px;
  height:102px;
@@ -13,11 +14,11 @@ flex-direction: column;
 float: right;
 }
 body {
-  background-image: url("../img/Kinshasa.png");
+  background-image: url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567671695/team_stockholm/Kinshasa_y72tti.png);
   background-repeat: no-repeat;
   background-size:1920px 700px; 
-  background-position-x: 0;
-  background-position-y: 0;
+  background-position-x: 0px;
+  background-position-y: 0px;
 }
 
 ul {
@@ -34,7 +35,7 @@ ul {
   text-decoration:none;
   display: block;
   color:#FFFFFF;
-/*  display:inline-block;*/
+  display:inline-block;
   margin-right: 15px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -47,12 +48,39 @@ ul {
   
 }
 #about{
+	background-color:orange;
+	color: #fff;
+
+}
+
+.text{
+	float:left;
+	width:40%;
+	padding-left: 5%;
+}
+.pic{
+	float:right;
+	width:49%;
+}
+
+.pic-1{
+  float:right;
+  padding-top: 5%;
+  padding-right: 5%;
+
+}
+
+ h2,p{
+	font-family:georgia;
+
+=======
   padding-top:220px;
   text-align: center;
   font-size:60px;
   font-family: 'Dosis',  sans-serif;
   color: #FFFFFF;
   
+>>>>>>> f5c8d16ddd8298aea6ed6b35b39326beb59219f2
 }
 #intro.p{
   float:left;
@@ -68,7 +96,7 @@ h2{
 }
 .reading{
   float:right;
-  padding:20px 20px 20px 0;
+  padding:20px 20px 20px 0px;
   width:600px;
   height:430px;
 }
@@ -80,12 +108,17 @@ h2{
 #nav a:hover{
   color:#FFA200;
 }
+#nav a:active{
+  text-decoration: underline;
+  text-decoration-color: #FFA200;
+}
 
 .the-partners{
   font-size: 40px;
   font-family: 'Dosis', medium, sans-serif;
   text-align:center;
-
+  
+  float: inherit;
 }
 
 .column{
@@ -125,4 +158,56 @@ hr{
 
 #line2{
   margin-left:650px;
+}
+
+.card{
+	margin-top: 5%;
+	display: flex;
+	flex-direction:row;
+	width: 100vw;
+
+}
+
+.contact-form{
+	position: absolute;
+	left:55%;
+}
+input{
+	width: 398px;
+	height:62px;
+	border:1px solid #000;
+	box-sizing:border-box;
+
+}
+textarea{
+	width:398px;
+	height: 169px;
+	border: 1px solid #000;
+	box-sizing: border-box;
+
+}
+
+input[type="submit"]{
+
+	position: absolute;
+	left:70px;
+	width:246px;
+	height: 53px;
+	background:#000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius:10px;
+	color:#fff;
+	font-size:20px;
+	font-family: 'roboto';
+	line-height: 28px;
+
+
+}
+
+
+::placeholder{
+	font-family: 'roboto';
+	font-size:14px;
+	line-height:16px;
+	padding-left: 10px;
 }
