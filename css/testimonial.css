@@ -24,6 +24,7 @@ img:hover {
 #img {
   width: 20%;
   height: 10%;
+   border-radius: 0;
 }
 
 #line1 {
