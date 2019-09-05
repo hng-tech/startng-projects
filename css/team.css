@@ -216,7 +216,10 @@ main{
     
     min-height: 14000px;
 }
-
+#team-list{
+    height: 500px;
+    weight: auto;
+ }
 /*Team image styling*/
 #team-list img{
     height: 100px;
