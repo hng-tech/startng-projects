@@ -892,6 +892,7 @@ header {
   letter-spacing: 1px;
    margin-top: 10px;
   margin-bottom: 10px;
+  color: black;
 }
 /*edited section 5 by @Joe Freely*/
 
@@ -900,11 +901,13 @@ header {
   padding: 50px 50px;
   border:none;
   color: black;
+  max-width: 30%;
 }
 
 .volunteer5 {
   text-align: center;
   padding: 50px 50px;
+  max-width: 30%;
 }
 
 
