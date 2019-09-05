@@ -1,75 +1,155 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8">
-<title>Volunteer Registration</title>
-<meta name="Volunteer Form" content="Minds and Souls volunteer registration form" />
-<link rel='stylesheet' href='../css/volunteer_form_validation.css' type='text/css' />
-  <link rel="stylesheet" href="../css/volunteer.css"/>
-  <link rel="stylesheet" href="../css/style.css"/>
-<script src="../js/volunteer_form_validation.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css?family=Dosis:300,400,500%7CMontserrat:300,500%7COpen+Sans:300,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/contactUs.css">
 </head>
-<body onLoad="document.registration.userid.focus();">
-<header>
-  <nav>
-    <div class="row">
-      <ul class="main-nav">
-        <li id="line1"><a href="../pages/index.html">Home</a></li>
-        <li id="line2"><a href="../pages/team.html">About</a></li>
-        <li id="line3"><a href="../pages/gallery.html">Gallery</a></li>
-        <li id="line4"><a href="../pages/testimonial.html">Testimonials</a></li>
-        <li id="line5"><a href="../pages/contactUs.html">Contact Us</a></li>
-        <li>
-          <input type="button" id="donateBtn"
-                 onclick="location.href='https://rave.flutterwave.com/donate/5hwqw1jravwl';" value="Donate">
-        </li>
-      </ul>
+<body>
+
+    <div class="banner">
+        <div class="header">
+            <div class="box-1">
+                <img src="https://res.cloudinary.com/thecodingarchitect/image/upload/v1567601291/logo_odqayf.png" alt="mind and soul logo" id="logo-img">
+            </div>
+
+            <div class="box-2"> 
+                <ul class="main-nav">
+                    <li id="line1"><a href="../pages/index.html">Home</a></li>
+                    <li id="line2"><a href="../pages/team.html">About</a></li>
+                    <li id="line3"><a href="../pages/gallery.html">Gallery</a></li>
+                    <li id="line4"><a href="../pages/testimonial.html">Testimonials</a></li>
+                    <li id="line5"><a href="../pages/contactUs.html">Contact Us</a></li>
+                    <li>
+                      <input type="button" id="donateBtn"
+                             onclick="location.href='https://rave.flutterwave.com/donate/5hwqw1jravwl';" value="Donate">
+                    </li>
+                  </ul>
+            </div>
+        </div>
+
+        <div class="box-3">
+            <p><h1 class="banner-text">Get in</h1></p>
+            <p><h1 banner-tex>Touch with us</h1></p>
+            <br>
+            <p> We are always glad to have you contact</p>
+            <p> us. Our lines and offices are yours 24/7</p>
+        </div>
     </div>
-  </nav>
-</header>
 
-<div id="frame">    
-    <div id="formheader">
-   		BECOME A VOLUNTEER
+    <div class="container">
+        <div class="wrapper">
+
+            <div class="contact-info">
+
+                <h3> Want to volunteer?</h3>
+                <hr>
+                <br>
+
+                <p> We can't wait to have you on board</p>
+                <p>Let us change the world one child at a time. </p>
+                <br>
+
+               
+
+               
+
+            </div>
+
+            
+
+            <div class="contact">
+                
+                <form>
+                    <p>
+                        <input type="text" name="name" placeholder="Enter Full Name" required minlength="6">
+                    </p>
+                    <br>
+    
+                    <p>
+                        <input type="email" name="email" placeholder="Enter E-mail address" required>
+                    </p>
+
+                    <br>
+    
+                    <p>
+                        <input type="number" name="phone" placeholder="Enter Phone Number" required minlength="11" maxlength="11"> 
+                    </p>
+
+                    <br>
+    
+                    <p>
+                        <textarea name="message" cols="30" rows="10" placeholder="Why do you want to become a volunteer?" required></textarea>
+                    </p>
+                    <br>
+    
+                    <p><button type="submit">Submit</button></p>
+                </form>
+            </div>
+
+        </div>
+
+       
+
     </div>
 
-	<div id="form">
-        <form name='registration' onSubmit="return formValidation();">
-            <ul>
-               <li><label for="Fullname">Fullname:</label></li>
-                <li><input type="text" name="fname" size="50" /></li>
-                
-                <li><label>Address:</label></li>
-                <li><input type="text" name="address" size="50" /></li>
-                
-                <li><label>Country:</label></li>
-                <li>
-                    <select name="country">
-                        <option selected="" value="Default">(Please select a country)</option>
-                        <option value="NG">Nigeria</option>
-                        <option value="GH">Ghana</option>
-                        <option value="OT">Others</option>
-                    </select>
-                </li>
-                <br/>
-                <li><label>E-mail:</label></li>
-                <li><input type="text" name="email" size="50" /></li>
-          
-                <li><label id="gender">Sex:</label></li>
-                <li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
-                <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
-                
-                <li><label>ZIP Code:</label></li>
-                <li><input type="text" name="zip" /></li>
-                
-                <li><label for="note">Note:</label></li>
-                <li><textarea name="note" id="desc"></textarea></li>
-                
-                <li><input class="button" type="submit" name="submit" value="Submit" /></li>    
-            </ul>
-        </form>
-    </div>   
-	    
-</div>
 
+    <footer class="footer">
+        <!-- About Us -->
+        <div class="foot-about">
+          <h4 class="foot-title"><img src="https://res.cloudinary.com/thecodingarchitect/image/upload/v1567601291/logo_odqayf.png" alt="Minds and Souls Logo" class="footer_logo"
+                                      style="width: 50%;"></h4>
+          <div class="underbar"></div>
+          <div class="foot-content">
+            <p>Minds &amp; Souls Foundation is an organization dedicated to eradicating illiteracy in Africa - one child, one
+              community and one country at a time.</p>
+          </div>
+        </div>
+        <!-- Site Links -->
+        <div class="foot-links">
+          <h4 class="foot-title">Site Links</h4>
+          <div class="underbar"></div>
+          <div class="foot-content">
+            <p><a href="../pages/index.html">Home</a></p>
+            <p><a href="../pages/team.html">About</a></p>
+            <p><a href="../pages/gallery.html">Gallery</a></p>
+            <p><a href="#">Sponsors</a></p>
+            <p><a href="https://rave.flutterwave.com/donate/5hwqw1jravwl">Donate</a></p>
+            <p><a href="../pages/volunteer.html">Volunteer</a></p>
+            <p><a href="../pages/testimonial.html">Testimonials</a></p>
+            <p><a href="../pages/contactUs.html">Contact Us</a></p>
+          </div>
+        </div>
+        <!-- Have A Question? -->
+        <div class="foot-question">
+          <h4 class="foot-title">Have A Question?</h4>
+          <div class="underbar"></div>
+          <div class="foot-content">
+            <p><span class="material-icons">location: </span><span
+              class="location">3 Birrel Avenue,<br> Sabo, Yaba, Lagos.<br>hotels.ng</span></p>
+            <p><span class="material-icons">phone: </span><a href="tel:01-2345-6789">01-2345-6789</a></p>
+            <p><span class="material-icons">email: </span><a href="mailto:info@mindsandsoulsfoundation.com">info@mindsandsoulsfoundation.com</a>
+            </p>
+            <a href="#" target="_blank"><img src="https://res.cloudinary.com/thecodingarchitect/image/upload/v1567636233/facebook-icon_tepsmu.png" alt="Facebook" width="30px"
+                                                           height="30px"></a>
+            <a href="#" target="_blank"><img src="https://res.cloudinary.com/thecodingarchitect/image/upload/v1567636233/twitter-icon_twie2h.png" alt="Twitter" width="30px" height="30px"></a>
+            <a href="#"><img src="https://res.cloudinary.com/thecodingarchitect/image/upload/v1567636233/instagram-icon_fi6xin.png" alt="Instagram" width="30px" height="30px"></a>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <p class="foot-info"> &copy; 2019 Minds &amp; Souls Foundation | Site design by <a href="../pages/team.html"
+                                                                                       id="team-stockholm">Team_Stockholm</a>
+        </p>
+      </footer>
+
+    <script src="../js/contactUs.js"></script>
+    
 </body>
 </html>
