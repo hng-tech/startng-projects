@@ -47,7 +47,7 @@ if (isset($_POST['login'])) {
 if (isset($_POST['signup'])) {
     $email_unsafe = $_POST['email'];
     $pass_unsafe = $_POST['password'];
-    $pass_conf_unsafe = $_POST['password_confirmation'];
+    // $pass_conf_unsafe = $_POST['password_confirmation'];
     $name_unsafe = $_POST['name'];
     $title_unsafe = $_POST['title'];
     $desc_unsafe = $_POST['desc'];
@@ -55,7 +55,7 @@ if (isset($_POST['signup'])) {
 
     $email = mysqli_real_escape_string($con, $email_unsafe);
     $password = mysqli_real_escape_string($con, $pass_unsafe);
-    $password_confirmation = mysqli_real_escape_string($con, $pass_conf_unsafe);
+    // $password_confirmation = mysqli_real_escape_string($con, $pass_conf_unsafe);
     $name = mysqli_real_escape_string($con, $name_unsafe);
     $title = mysqli_real_escape_string($con, $title_unsafe);
     $desc = mysqli_real_escape_string($con, $desc_unsafe);
@@ -71,11 +71,11 @@ if (isset($_POST['signup'])) {
         echo "<script type='text/javascript'>alert('Email address already exists')</script>";
         echo "<script type='text/javascript'>document.location='sign-in.php'</script>";
         exit(0);
-    } elseif ($password != $password_confirmation) {
+        // } elseif ($password != $password_confirmation) {
 
-        echo "<script type='text/javascript'>alert('Passwords dont Match')</script>";
-        echo "<script type='text/javascript'>document.location='sign-in.php'</script>";
-        exit(0);
+        //     echo "<script type='text/javascript'>alert('Passwords dont Match')</script>";
+        //     echo "<script type='text/javascript'>document.location='sign-in.php'</script>";
+        //     exit(0);
     } elseif (!validateEmail($email)) {
 
         echo "<script type='text/javascript'>alert('Invalid Email address')</script>";
@@ -132,7 +132,7 @@ if (isset($_POST['signup'])) {
                     <input type="text" name="name" placeholder="Full Name" required />
                     <input type="email" name="email" placeholder="Email" required />
                     <input type="password" name="password" placeholder="Password" required />
-                    <input type="password" name="password_confirmation" placeholder="Confirm Password" required />
+                    <!-- <input type="password" name="password_confirmation" placeholder="Confirm Password" required /> -->
                     <input type="text" name="title" placeholder="Title" required />
                     <input type="text" name="desc" placeholder="What you need?" required />
                     <input type="number" name="amount" placeholder="Amount Needed" required />
