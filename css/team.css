@@ -14,8 +14,9 @@ body{
     background-color:azure;
     font: 15px/1.5 Arial, Helvetica,sans-serif;
 }
-
-
+#team{
+    text-align: center;
+}
 
 /* header{
     background:white;
