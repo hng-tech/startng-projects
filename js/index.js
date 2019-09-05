@@ -34,7 +34,7 @@ const displayProfile = (data) => {
     team_column.appendChild(message)
 
     i.className = "fa fa-link"
-    i.textContent = "Check out my CV"
+    i.textContent = "more details.."
     resume.appendChild(i)
     resume.href = member.resume
     li.appendChild(resume)
