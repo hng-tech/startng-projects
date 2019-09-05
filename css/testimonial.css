@@ -157,19 +157,19 @@ header {
 
 #landing-inner ul li:nth-child(1) {
   font-size: 80px;
-  line-height: 94px;
+  line-height: 30px;
   color: #fff8f8;
 }
 #landing-inner ul li:nth-child(2) {
   font-size: 25px;
-  line-height: 94px;
+  line-height: 30px;
   color: #fff8f8;
 }
 
 #landing-inner ul li:nth-child(3) {
   font-weight: 800;
   font-size: 150px;
-  line-height: 176px;
+  line-height: 30px;
   color: #ff8121;
 }
 
