@@ -35,7 +35,7 @@
 	<div id="form">
         <form name='registration' onSubmit="return formValidation();">
             <ul>
-                <li><label>Fullname:</label></li>
+               <li><label for="Fullname">Fullname:</label></li>
                 <li><input type="text" name="fname" size="50" /></li>
                 
                 <li><label>Address:</label></li>
@@ -53,16 +53,15 @@
                 <br/>
                 <li><label>E-mail:</label></li>
                 <li><input type="text" name="email" size="50" /></li>
-                
+          
                 <li><label id="gender">Sex:</label></li>
                 <li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
                 <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
                 
-                
                 <li><label>ZIP Code:</label></li>
                 <li><input type="text" name="zip" /></li>
                 
-                <li><label>Note:</label></li>
+                <li><label for="note">Note:</label></li>
                 <li><textarea name="note" id="desc"></textarea></li>
                 
                 <li><input class="button" type="submit" name="submit" value="Submit" /></li>    
