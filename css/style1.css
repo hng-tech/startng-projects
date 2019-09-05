@@ -169,19 +169,6 @@ header {
   background-attachment: fixed;
 }
 
-.header1 {
-  display:flex;
-  flex-wrap: wrap;
-  background-size: contain;
-  max-height: 120px;
-  background-position: right;
-  height: 100vh;
-  align-items: stretch;
-  alignment: right;
-  background-attachment: fixed;
-  justify-content: flex-end;
-}
-
 .logo {
   height: 62px;
   width: auto;
@@ -326,7 +313,7 @@ img[about_image] {
 
 /* Main navi changed to flex to allow responsiveness in smaller devices */
 .main-nav {
- display: -webkit-inline-flex;
+ display:flex;
  flex-wrap:wrap;
   list-style: none;
   margin-top: 55px;
@@ -524,7 +511,6 @@ margin-top: -130px;
   height: 350px;
   display: flex;
   flex-direction: row;
-  margin-top: -50px;
 }
 
 .about-us {
@@ -613,7 +599,7 @@ margin-top: -130px;
 	width:49%;
 }
 
-/* h2,p{
+//* h2,p{
 	font-family: georgia;
 } */
 
@@ -892,7 +878,6 @@ header {
   letter-spacing: 1px;
    margin-top: 10px;
   margin-bottom: 10px;
-  color: black;
 }
 /*edited section 5 by @Joe Freely*/
 
@@ -901,13 +886,11 @@ header {
   padding: 50px 50px;
   border:none;
   color: black;
-  max-width: 30%;
 }
 
 .volunteer5 {
   text-align: center;
   padding: 50px 50px;
-  max-width: 30%;
 }
 
 
@@ -1245,7 +1228,7 @@ hr{
   float: left;
 }
 .main-nav {
- float: left;
+ float: right;
  margin-top: 20px;
  margin-right: 20px;
 }
@@ -1276,7 +1259,7 @@ header #donateBtn {
 .header-text-box {
  position: absolute;
  width: 97%;
- top: 45%;
+ top: 45%:
  bottom: 50%;
  left: 50%;
  -webkit-transform: translate(-50%, -50%);
@@ -1411,4 +1394,4 @@ header #donateBtn {
  width: 100%;
  margin: -200px 0 0;
  height: 200px;
-}}
+}
