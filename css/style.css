@@ -48,12 +48,40 @@ ul {
   
 }
 #about{
+<<<<<<< HEAD
+	background-color:orange; #ffb833;
+	color: #fff;
+
+}
+
+.text{
+	float:left;
+	width:40%;
+	padding-left: 5%;
+}
+.pic{
+	float:right;
+	width:49%;
+}
+
+.pic-1{
+  float:right;
+  padding-top: 5%;
+  padding-right: 5%;
+
+}
+
+ h2,p{
+	font-family:georgia;
+
+=======
   padding-top:220px;
   text-align: center;
   font-size:60px;
   font-family: 'Dosis',  sans-serif;
   color: #FFFFFF;
   
+>>>>>>> f5c8d16ddd8298aea6ed6b35b39326beb59219f2
 }
 #intro.p{
   float:left;
