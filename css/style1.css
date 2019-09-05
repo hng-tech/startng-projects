@@ -958,7 +958,7 @@ header {
 }
 
 
-.foot-content, .design-info {
+.foot-content, .foot-info {
   font: 400 1em "Open Sans", sans-serif;
 }
 .foot-content, .foot-content p, .foot-info { 
@@ -1027,6 +1027,7 @@ header {
 @media only screen and (max-width: 900px) {
   .footer {
     padding: 30px;
+    font-size: 0.95em;
   }
 
   .foot-about {
