@@ -96,7 +96,7 @@ $count = mysqli_num_rows($query);
                 <div class="shadow">
                     <div class="entity">
                         <div class="col-2">
-                            <img src="images/avatar.png">
+                            <img src="https://res.cloudinary.com/judejax/image/upload/v1567639756/avatar.png">
                         </div>
                         <div class="col-10">
                             <span class="entity-text"> <?php echo $row['name'] ?> </span> <br>

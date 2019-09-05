@@ -124,7 +124,7 @@ $userId = $_GET['id'];
 
         <br>
         <div class="pay-button-container">
-            <img src="images/trusted_by_flutterwave.png">
+            <img src="https://res.cloudinary.com/judejax/image/upload/v1567639672/trusted_by_flutterwave.png" alt="Trusted by Flutterwave" title="Flutterwave">
         </div>
         <!--I dont know how "RECAPTCHA" works-->
 
