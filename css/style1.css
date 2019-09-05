@@ -21,7 +21,6 @@ body {
   font-size: 20px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-  margin: 0;
 }
 
 /* ------------------------------------------------ */
@@ -33,7 +32,7 @@ body {
 }
 
 section {
-  padding: 20px 0;
+  padding: 80px 0;
 }
 
 /* ------- HEADINGS --------*/
@@ -146,7 +145,7 @@ header #donateBtn {
 /* ------------------------------------------------ */
 /* HEADER */
 /* ------------------------------------------------ */
- 
+
 header button {
   font-size: 30px;
   background-color: #f0981d;
@@ -160,9 +159,7 @@ header span {
 }
 
 header {
-	display:flex;
- 	flex-wrap: wrap;
-  background-image: url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567546764/team_stockholm/header-background-image1_fyqisp.png);
+  background-image: url(../img/header-background-image1.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -311,16 +308,16 @@ img[about_image] {
   margin-left: 40px;
 }
 
-/* Main navi changed to flex to allow responsiveness in smaller devices */
+/* Main navi */
 .main-nav {
- display:flex;
- flex-wrap:wrap;
+  float: right;
   list-style: none;
   margin-top: 55px;
   margin-right: 100px;
 }
 
-.main-nav li { 
+.main-nav li {
+  display: inline-block;
   margin-left: 40px;
   font-family: Montserrat;
   font-weight: lighter;
@@ -349,20 +346,12 @@ img[about_image] {
   position: absolute;
   width: 1140px;
   top: 60%;
-  left: 75%;
+  left: 80%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: Dosis;
+  font-family: "Dosis", sans-serif;
   font-size: 150%;
 }
-@media only screen and (min-width:411px){
-	.header-text-box{
-		width:58%;
-		font-size:100%;
-	}
-
-}
-
 
 .orange-text {
   color: #e67e22;
@@ -370,8 +359,9 @@ img[about_image] {
 
 
 #testimonials{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567508173/team_stockholm/IMG-20190901-WA0007_ehffcb.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567508173/team_stockholm/IMG-20190901-WA0007_ehffcb.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+
 }
 
 /* ----------------------------------------------- */
@@ -385,21 +375,28 @@ img[about_image] {
 }
 
 .vision-3-boxes {
-	display: grid;
-	grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
-margin-top: -130px;
-  
+  width: 80%;
+  height: 300px;
+  margin-top: -130px;
+  display: flex;
+  flex-direction: row;
 }
 
 .vision {
+  width: 40%;
+  height: 300px;
   background-color: #e67e22;
 }
 
 .donate {
-   background-color: #FE982D;
+  width: 30%;
+  height: 300px;
+  background-color: #FE982D;
 }
 
 .volunteer {
+  width: 30%;
+  height: 300px;
   background-color: #F2B141;
 }
 
@@ -440,12 +437,6 @@ margin-top: -130px;
   -webkit-box-shadow: 0 0 15px -3px rgba(138, 112, 138, 1);
   -moz-box-shadow: 0 0 15px -3px rgba(138, 112, 138, 1);
   box-shadow: 0 0 15px -3px rgba(138, 112, 138, 1);
-} 
-@media only screen and (min-width:411px){
-	.donate-button{
-		width:150px; 
-		font-size:15px;
-	}
 }
 
 .donate-button p {
@@ -481,12 +472,6 @@ margin-top: -130px;
   box-shadow: 0 0 15px -3px rgba(138, 112, 138, 1);
 }
 
-@media only screen and (min-width:411px){
-	.volunteer-button{
-		width:150px; 
-		font-size:15px;
-	}
-}
 .volunteer-button p {
   position: absolute;
   font-family: Open Sans;
@@ -511,6 +496,7 @@ margin-top: -130px;
   height: 350px;
   display: flex;
   flex-direction: row;
+  margin-top: -50px;
 }
 
 .about-us {
@@ -561,7 +547,7 @@ margin-top: -130px;
 .about-main-img {
   width: 500px;
   height: 370px;
-  background-image: url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567540055/team_stockholm/about-us-img_i3kqfi.png);
+  background-image: url(../img/about-us-img.png);
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -599,9 +585,10 @@ margin-top: -130px;
 	width:49%;
 }
 
-//* h2,p{
+ h2,p{
 	font-family: georgia;
-} */
+
+}
 
 .text h2{
 	font-size:35px;
@@ -662,8 +649,8 @@ hr{
 /* ----------------------------------------------- */
 
 header {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567328022/team_stockholm/hero3_p1k6qu.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567328022/team_stockholm/hero3_p1k6qu.png);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero3.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero3.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -743,8 +730,9 @@ header {
 
 
 #testimonials{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567543996/team_stockholm/kids2_gv1af7.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dxket0tkt/image/upload/v1567543996/team_stockholm/kids2_gv1af7.png);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kids2.png);
+
 }
 
 @media screen and (max-width: 550px) {
@@ -876,24 +864,7 @@ header {
   text-align: center;
   font-size: large;
   letter-spacing: 1px;
-   margin-top: 10px;
-  margin-bottom: 10px;
 }
-/*edited section 5 by @Joe Freely*/
-
-.donation5 {
-  text-align: center;
-  padding: 50px 50px;
-  border:none;
-  color: black;
-}
-
-.volunteer5 {
-  text-align: center;
-  padding: 50px 50px;
-}
-
-
 
 /* set image to center */
 .sec5 img {
@@ -922,7 +893,6 @@ header {
 
 /* end of section5 */
 
-
 /* ------------------------------------------------ */
 /* Footer styles */
 /* ------------------------------------------------ */
@@ -948,29 +918,16 @@ header {
   margin-bottom: 7px;
 }
 
-.underbar { 
-  width: 50px; 
-  border-bottom: 2px solid #FFFFFF; 
-}
+.underbar {
+  width: 50px;
+  border-bottom: 2px solid #FFFFFF; }
 
 .foot-content {
   margin-top: 20px;
 }
 
-
-.foot-content, .foot-info {
+.foot-content, .design-info {
   font: 400 1em "Open Sans", sans-serif;
-}
-.foot-content, .foot-content p, .foot-info { 
-  font: 300 1em "Open Sans", sans-serif; 
-}
-
-.foot-about p {
-  width: 70%;
-}
-
-.foot-links p {
-  margin-bottom: 5px;
 }
 
 .foot-about, .foot-links, .foot-question {
@@ -980,14 +937,10 @@ header {
 .foot-about {
   width: 40%;
 }
-.foot-about, .foot-question { 
-  width: 40%; 
-}
 
 .foot-links {
   width: 20%;
 }
-
 
 .foot-question {
   width: 40%;
@@ -995,15 +948,6 @@ header {
 
 .foot-about .foot-content {
   width: 60%;
-}
-.foot-question-row { 
-  display: flex;
-  display: -webkit-flex; 
-  margin-bottom: 10px; 
-}
-
-.foot-contact-info { 
-  margin-left: 10px; 
 }
 
 .clear::after {
@@ -1024,10 +968,9 @@ header {
 /* RESPONSIVE footer */
 
 /*For tablets*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .footer {
     padding: 30px;
-    font-size: 0.95em;
   }
 
   .foot-about {
@@ -1053,10 +996,8 @@ header {
   .foot-about, .foot-links, .foot-question, .foot-about .foot-content {
     float: none;
     width: 100%;
-    margin-bottom: 5px;
   }
 }
-
 /*===============================================================================
 /*SECTION 2 OF RESPONSIVE CONTACT-US PAGE*/
 /*===================================================================================*/
@@ -1071,12 +1012,12 @@ header {
   clear: both;
 }
 
-[enquiry_form], [main]{
+[enquiry_form], [contact_text]{
   margin: 30px auto;
   width: 70%;
 }
-
-[main] p{
+[contact_text] h1,
+[contact_text] p{
   color: #000;
   font-weight: normal;
   letter-spacing: 0;
@@ -1084,23 +1025,23 @@ header {
   font-size: unset;
 }
 
-[main] table{
+[contact_text] table{
   margin: 40px 0;
   border-spacing: 10px;
 }
 
-[main] table [social_media]{
-  padding-top: 10px;
+[contact_text] table [social_media]{
+  padding-top: 40px;
   font-size: small;
 }
 
-[main] table [social_media] img{
+[contact_text] table [social_media] img{
   width: 40px;
 }
-[main] table.icon{
+[contact_text] table.icon{
   width: 1%;
 }
-[main] table.text1{
+[contact_text] table.text1{
   width: 99%;
 }
 
@@ -1134,265 +1075,14 @@ hr{
 }
 
 [enquiry_form] input[type="submit"]{
-  padding: 12px 80px;
-  border: none;
+  padding: 15px 100px;
   border-radius: 10px;
-  margin-left: 180px;
-  margin-right: 180px;
+  margin: 0 auto;
   color: #fff;
-  font-weight: 600;
-  font-size: 20px;
-  background: rgb(255,129,33);
-  background: linear-gradient(90deg, rgba(255,129,33,1) 40%, rgba(242,177,65,1) 75%, rgba(254,152,45,1) 100%);
-  }
-
+  background: #000;
+}
 @media screen and (max-width: 600px){
   .view{
     width: 100%;
   }
-}
-
-/* @Oluchii */
-    .rope{
-      padding-bottom: 10px;
-      border-bottom: 2px solid currentColor;
-      color: #000000;
-      word-spacing: normal;
-      letter-spacing: normal;
-    }
-
-    .ropes{
-      color: #000000;
-      font-size: 30px;
-      word-spacing: 1px;
-      letter-spacing: 2px;
-      margin-left: 15px;
-    }
-
-    .main {
-        margin: 10%;
-        background-color: white;
-        font-family: 'Philosopher';
-        line-height: 1.5em;
-    }
-
-    .main .right {
-        float: left;
-        height: auto;
-        background-size: cover;
-    }
-
-    .right .content {
-        margin: auto;
-        padding-top: 10px;
-        color: #000000;
-    }
-
-    .right .content i{
-        text-align: left;
-        font-size: 25px;
-        margin-right: 10px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: 5px;
-    }
-
-    .right .content p {
-        padding: 17px;
-        font-size: 19px;
-        }
-
-        .connect{
-          color: #000000;
-          margin: 20px;
-        }
-
-        .social_media{
-          margin: 20px;
-          font-size: 30px;
-          word-spacing: 30px;
-        }
-
-/*For smartphones min-width: 700px up to max-width: 750px and thereabout @alickdavid*/
-@media only screen and (max-width: 750px) {
-#img {
-    float: left;
-    margin: 12px 0 0 12px;
-    width: 40%;
-}   
-/* Main navi */
-#li {
-  margin: 1px 0 0 1px;
-  padding: 5px;
-  display: flex;
-  font-size: 20px;
-  float: left;
-}
-.main-nav {
- float: right;
- margin-top: 20px;
- margin-right: 20px;
-}
-.main-nav li {
- display: inline-block;
- float: left;
- margin-left: 1px;
-}
-.main-nav li a:link,
-.main-nav li a:visited {
- padding: 0;
- text-transform: uppercase;
- font-size: 32%;
-}
-#donateBtn {
-  height: 15px;
-  width: 2px;
-  margin: -5px;
-}
-header #donateBtn {
- font-size: 10px;
- margin: -10px 2px 0 1px;
- color:white;
- width: 45px;
- height: 14px;
- border-radius: 40px;
-}
-.header-text-box {
- position: absolute;
- width: 97%;
- top: 45%:
- bottom: 50%;
- left: 50%;
- -webkit-transform: translate(-50%, -50%);
- transform: translate(-50%, -50%);
- font-size: 0.5rem;
- text-align: center;
-}
-/* ----------------------------------------------- */
-/* VISION AND DONATION */
-/* ----------------------------------------------- */
-.section-vision {
- width: 100%;
- height: 300px;
- margin-bottom: 15px;
-}
-.vision-3-boxes {
- width: 250px;
- height: 200px;
- margin-top: -60px;
-}
-.vision {
- width: 50%;
- height: 150px;
-}
-.donate {
- width: 30%;
- height: 150px;
-}
-.volunteer {
- width: 30%;
- height: 150px;
-}
-.vision h3 {
- margin-top: 10px;
- margin-left: 15%;
- font-size: 50%;
-}
-.vision-notes {
- line-height: 100%;
- width: 70%;
- margin-left: 15%;
- font-size: 0.6rem;
-}
-.donate h3 {
- margin-top: 10px;
- margin-left: 15%;
- font-size: 50%;
-}
-.donate-notes {
- line-height: 85%;
- width: 65%;
- margin-left: 15%;
- font-size: 0.6rem;
-}
-.donate-button {
- width: 80%;
- height: 10%;
- background-color: #fff;
- margin: 10px 0 0 15%;
-}
-.donate-button p {
- position: absolute;
- font-size: 0.5rem;
- color: #000;
- margin-top: 3px;
- margin-left: 4px;
-}
-.volunteer h3 {
- margin-top: 10px;
- margin-left: 15%;
- font-size: 50%;
-}
-.volunteer-notes {
- line-height: 85%;
- width: 65%;
- margin-left: 15%;
- font-size: 0.6rem;
-}
-.volunteer-button {
- width: 80%;
- height: 10%;
- background-color: #fff;
- margin: 10px 0 0 15%;
-}
-.volunteer-button p {
- position: absolute;
- font-size: 0.5rem;
- color: #000;
- margin: 0 auto;
- margin-top: 3px;
- margin-left: 4px;
-}
-/* 1 */
-/* ABOUT US */
-/* ----------------------------------------------- */
-.section-about-us {
- width: 100%;
- height: 400px;
- margin-top: -10px;
-}
-.about-us {
- width: 60%;
- height: 100%;
-}
-.about-us h2 {
- font-size: 1.5rem;
- margin-top: 25px;
-}
-.about-us-notes {
- line-height: 130%;
- width: 100%;
- font-size: 1rem;
-}
-.about-us-button {
- width: 150px;
- height: 50px;
-}
-.about-us-button p {
-   position: absolute;
-   margin: 0 auto;
-   margin-top: 15px;
-   margin-left: 35px;
-   font-size: 1rem;
-}
-.about-us-img {
- float: left;
- position: absolute;
- width: 80%;
- height: 100%;
-}
-.about-main-img {
- width: 100%;
- margin: -200px 0 0;
- height: 200px;
 }
