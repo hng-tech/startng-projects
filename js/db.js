@@ -21,7 +21,7 @@ let data = [{
 }, {
   name: "@drey",
   cloudinary: "https://res.cloudinary.com/drey/image/upload/w_400,h_400,c_scale/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1566498126/20190730_102625_qwqiez.jpg",
-  message: " Team deputy.Head of Ui/ux design team, i edited most of the team mockups, made contributions on front-end development, adding some lines of html and css codes",
+  message: " Team deputy.Head of ui/ux design team, I edited most of the team mockups, assisted the front-end coders",
   resume: "https://drey771.github.io/",
 }, {
   name: "@Tobby",
@@ -46,7 +46,7 @@ let data = [{
 },{
   name:  "@Sir Lighton",
   cloudinary: "https://res.cloudinary.com/sir-lighton/image/upload/w_400,h_400,c_scale/v1566507311/IMG_20190813_133937_877_1_nsfncl.jpg",
-  message: "backend",
+  message: "Backend",
   resume: "https://olaosebikan.github.io/OLAONIPEKUN",
 },{
   name: "@Charles Ugbana",
@@ -76,7 +76,7 @@ let data = [{
 },{
   name: "@siyfa",
   cloudinary: "https://res.cloudinary.com/siyfa/image/upload/w_400,h_400,c_scale/e_art:incognito,fl_animated.any_format.attachment.clip.sanitize.strip_profile,r_14/v1566537499/dsiuwznszbcve3nzwmr0.jpg",
-  message: "Among the frontend team and contributed by also working on the homepage of the team website. Provided information and helping hand during the designing. ",
+  message: "Among the frontend team and worked on the homepage. Provided information and helping hand during the designing. ",
   resume: "https://siyfa.github.io/Hakuna/",
 },{
   name: "@Linda Adamu",
@@ -101,7 +101,7 @@ let data = [{
 },{
   name: "@Arinze",
   cloudinary: "https://res.cloudinary.com/dzwtycmnl/image/upload/w_400,h_400,c_scale/v1566590092/IMG_2602_osa6ad.jpg",
-  message: "I contributed in working on the Contact Us page with @Tosin 'Lua and @Dolapo. M",
+  message: "I contributed in working on the Contact Us page",
   resume: "https://arinzecv.netlify.com/",
 },{
   name: "@Joe Freely",
@@ -116,17 +116,17 @@ let data = [{
 },{
   name: "@Isreal Bankole",
   cloudinary: "https://res.cloudinary.com/isrealbankole/image/upload/w_400,h_400,c_scale/v1567335233/28537503_813349345528547_1670912722_n_7_ihib8j.jpg",
-  message: "I helped in setting up the Meet The Team page and assisted in getting the images for the Home page ready and hosted on Cloudinary.",
+  message: "I worked on the Team page and assisted in getting the images for the Home page ready on Cloudinary.",
   resume: "https://oyefolarin.github.io/Start-NG-Projects/",
 },{
   name: "@writeshittu",
   cloudinary: "https://res.cloudinary.com/undercover/image/upload/w_400,h_400,c_scale/v1566576871/passport_zju0xb.jpg",
-  message: "Helped in writing codes on the volunteer section of the landing page. Also part of the team testing the responsiveness of the group project site",
+  message: "Worked on the volunteer page. Also part of the team testing the responsiveness of the group project site",
   resume: "https://shit2boy.github.io/hnginternship/",
 },{
   name: "@anikriz",
   cloudinary: "https://res.cloudinary.com/anikriz/image/upload/w_400,h_400,c_scale/v1566560640/HNG%20%7CStartng%20Internship/passport_photo-min_zremwg.jpg",
-  message: "I participated in the design of the home page, from the header to the about us section, and also designed a donation page for the team.",
+  message: "I worked on the design of the home page, the header to the about us page, and also designed a donation page for the team.",
   resume: "https://anikriz.github.io/startng-training/",
 },{
   name: "@Daniel Kolawole",
@@ -151,7 +151,7 @@ let data = [{
 },{
   name: "@AbbyJibril",
   cloudinary: "https://res.cloudinary.com/abbyjibril/image/upload/w_400,h_400,c_scale/v1566573121/AbbyJibril_ftlsaj.jpg",
-  message: "I developed content for the Testimonials and Donate pages of the project. I also reviewed the pages and existing content for optimization.",
+  message: "I developed content for the Testimonials and Donate pages of the project. I also tested the website for optimization.",
   resume: "https://abbyjibril.github.io/",
 },{
   name: "@meek",
@@ -174,10 +174,10 @@ let data = [{
   message: "Led the SEO team and also gave contributions ",
   resume: "https://codepen.io/estherokafor05/full/mdbqgoo",
 },{
-  name: "@Alex",
-  cloudinary: "https://res.cloudinary.com/pemualexandra/image/upload/w_400,h_400,c_scale/v1566641587/IMG_20190417_151731_1_qy85gh.jpg",
-  message: "I examined the website and provided feedback and support in the changes, I created a home button for the testimonials page. I created the email address and worked hand in hand with the social media team",
-  resume: "https://alex-pemu.github.io/StartNG",
+  name: "@mikeattara",
+  cloudinary: "https://res.cloudinary.com/mikeattara/image/upload/v1567757653/IMG_2751-min.jpg",
+  message: "Setup organisation and development flow on github. Setup Continuous Deployment to netlify for the frontend.",
+  resume: "https://docs.google.com/document/d/1OBpA8DEmPXIyKeuZ0WJ7vMABMzSTy2aujGLu1KJDF_Y/edit?usp=sharing"
 },{
   name: "@Larrich",
   cloudinary: "https://res.cloudinary.com/larrich/image/upload/w_400,h_400,c_scale/v1559471226/Larrich.jpg",
@@ -186,7 +186,7 @@ let data = [{
 },{
   name: "@Lanray",
   cloudinary: "https://res.cloudinary.com/lanrayjay/image/upload/w_400,h_400,c_scale/v1567380184/HNG%20Resources/IMG_20180306_123902_resize_27_w6trxr.jpg",
-  message: "For now, not really defined but I've helped with constructive criticism of the minds and souls homepage and about (team) page; noting where work needs to be done, I'm working on the volunteer and contact form page for now.",
+  message: "I helped test the team page; I also worked on the volunteer page and contact form page for now.",
   resume: "https://lanrayjay.github.io",
 },{
   name: "@Dawillzy",
@@ -196,6 +196,6 @@ let data = [{
 },{
   name: "@isong josiah",
   cloudinary: "https://res.cloudinary.com/isongjosiah/image/upload/w_400,h_400,c_scale/c_thumb,h_1135/v1566558716/20190308_131542_2_bpkovi.jpg",
-  message: "checked the website for bugs that needed to be fixed and called the attention of team members to the bugs.",
+  message: "Checked the website for bugs that needed to be fixed and called the attention of team members to the bugs.",
   resume: "https://isongjosiah.github.io/Startdotng/"
 }]
