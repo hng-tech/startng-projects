@@ -146,12 +146,12 @@ let data = [{
 },{
   name: "@the zoba",
   cloudinary: "https://res.cloudinary.com/chizzy/image/upload/w_400,h_400,c_scale/v1567355207/IMG_20190825_081149_2.jpg",
-  message: "contributed to the responsiveness by adding some media queries and styles to the style sheet for smaller devices",
+  message: "Worked on site responsiveness.",
   resume: "https://classychizzy.github.io/contact-form/",
 },{
   name: "@AbbyJibril",
   cloudinary: "https://res.cloudinary.com/abbyjibril/image/upload/w_400,h_400,c_scale/v1566573121/AbbyJibril_ftlsaj.jpg",
-  message: "I developed content for the Testimonials and Donate pages of the project. I also reviewed the pages and existing content for optimization.",
+  message: "Wrote content for the Testimonial and Donate pages.",
   resume: "https://abbyjibril.github.io/",
 },{
   name: "@meek",
@@ -166,7 +166,7 @@ let data = [{
 },{
   name: "@Obinna",
   cloudinary: "https://res.cloudinary.com/dusclsrqy/image/upload/w_400,h_400,c_scale/v1566517482/34053158_180572342605752_7005803408871391232_n.jpg_zfoqpt.jpg",
-  message: "I worked on the home page html and css and also added some content to the home page",
+  message: "I worked on the home page.",
   resume: "https://obinnadtq.github.io/HNG_tech/",
 },{
   name: "@Esther Okafor",
@@ -186,7 +186,7 @@ let data = [{
 },{
   name: "@Lanray",
   cloudinary: "https://res.cloudinary.com/lanrayjay/image/upload/w_400,h_400,c_scale/v1567380184/HNG%20Resources/IMG_20180306_123902_resize_27_w6trxr.jpg",
-  message: "For now, not really defined but I've helped with constructive criticism of the minds and souls homepage and about (team) page; noting where work needs to be done, I'm working on the volunteer and contact form page for now.",
+  message: "Tested homepage and team page; worked on volunteer and contact form page.",
   resume: "https://lanrayjay.github.io",
 },{
   name: "@Dawillzy",
@@ -196,7 +196,7 @@ let data = [{
 },{
   name: "@isong josiah",
   cloudinary: "https://res.cloudinary.com/isongjosiah/image/upload/w_400,h_400,c_scale/c_thumb,h_1135/v1566558716/20190308_131542_2_bpkovi.jpg",
-  message: "checked the website for bugs that needed to be fixed and called the attention of team members to the bugs.",
+  message: "Tester.",
   resume: "https://isongjosiah.github.io/Startdotng/"
 },{
   name: "@Nd ekong",
