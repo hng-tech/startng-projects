@@ -1,0 +1,461 @@
+@font-face {
+  font-family: geometria;
+  src: url('../css/Geometria/Geometria-Light.ttf') format('truetype');
+
+} 
+*{
+  outline: none;
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+}
+h1{
+  color:#fff;
+  text-align: left;
+  text-indent: 5rem;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: url(https://res.cloudinary.com/abisola/image/upload/v1567281398/Ledger_exlfgv.png)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: geometria;
+}
+ul{padding: 0%}
+
+/* STYLING OF TAGS IN HEADER ELEMENT */
+header nav {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  display: none;
+  color:#FFA401;
+  font-size: 2rem;
+}
+
+#nav-items {
+  display: flex;
+  list-style-type: none;
+  
+}
+#nav-items a{
+  transition: ease-in-out .5s;
+}
+#nav-items a:hover{
+  color: #FFA401;
+}
+.active{
+  color: #FFA401 !important;
+}
+#nav-items a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2em;
+  font-size: 17px;
+}
+
+  
+  
+
+.ledger-view-modal {
+    display: none;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    z-index: 50;
+    width: 50%;
+    height: auto;
+    overflow: auto;
+    background-color: transparent;
+    text-align: center;
+    
+}
+
+.view-modal-content {
+    text-align: left;
+    display: inline-block;
+    background-color: rgb(35, 145, 114);
+    padding: 0 2% 0 7%;
+    border-radius: 5px;
+    line-height: 2;
+
+}
+.modal-content{
+    color: white;
+    font-weight: bold;
+}
+
+.dod{
+    color: gold;
+    text-align: center;
+}
+#donor-name, #amount-donated, #donation-date{
+    color: rgb(58, 59, 59);
+    font-size: 1.1em;
+    margin-left: 2%;
+}
+
+#close {
+    color: black;;
+    float: right;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-right: 0;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+.dot {
+    visibility: hidden;
+}
+
+header {
+  padding-bottom: 50px;
+}
+
+#ledger {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left:5%;
+    padding-right:5%;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.ledger-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    margin-bottom:15px;
+    align-content: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(234, 241, 241, 0.363);
+}
+
+.ledger-menu-button {
+    
+    background-color:rgb(187, 243, 227);
+    border-radius: 10px;
+    padding: 7px 27%;
+}
+
+.ledger-menu-button>a{
+    text-decoration: none;
+    color: rgb(35, 145, 114);
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.5;  
+
+}
+
+.ledger-menu-button>a:hover {
+    text-decoration: none;
+    color:gold;
+}
+
+.menu-button-div{
+    width:80%;
+    border-radius: 10px;
+    padding: 1.5px;
+    margin: 40px auto;
+}
+
+
+.ledger-amount {
+    display: flex;
+    flex-direction: column;
+    flex:wrap;
+    width: 75%;
+    padding: 20px 1%;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(245, 245, 245) , transparent 100%)
+}
+
+.ledger-amount-breakdown{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 5%;
+}
+
+.ledger-total-amount{
+    color: rgb(35, 145, 114);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 1%;
+}
+
+
+
+.ledger-table{
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.td-details{
+    font-weight: bold;
+}
+
+.td-name{
+    font-size:1em;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%; 
+    margin-bottom: 50px; 
+}
+
+td,
+th {
+    border: 1px solid transparent;
+    text-align: center;
+    padding: 8px 2%;
+}
+tr td button {
+  font-size: .9em;
+}
+
+th{
+    color: rgb(35, 145, 114);
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(207, 247, 235);
+}
+
+tr:nth-child(1){
+    height: 70px;
+}
+
+.ledger-table-heading{
+    color: gold;
+    font-weight: bolder;
+    font-size:1.5em;
+    width:70%;
+    padding: 10px 10%; 
+}
+
+
+[view-button]{
+    color: white;
+    background-color: rgb(35, 145, 114);
+    padding: 2% 3%;
+    border-radius: 40px;
+    border: 1px solid transparent;
+}
+
+[view-button]>a{
+text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: .8em;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+[view-button]>a:hover{
+    color: gold;
+    text-decoration: none;
+}
+
+[view-more]{
+    padding: 7px 15px;
+}
+[view-more] > a{
+    font-size: 100%;
+}
+footer{
+  background-color:#22352B;
+  color: #fff;
+  padding: 15px;
+}
+.footer_cont{
+  text-align: center;
+}
+.footer_cont p{
+  font-weight: bold;
+}
+.footer_cont hr {
+  margin: 10px 0px;
+  border: none;
+  height: 1px;
+  background-color: #fff;
+}
+.sub_cont{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.sub_cont input {
+  height: 40px;
+  border: none;
+  text-indent: 10px;
+}
+.sub_cont button {
+  border: none;
+  color: #fff;
+  background-color: #FFA401;
+}
+.socials{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials i {
+  font-size: 1.5em;
+  color: #FFA401;
+  margin-left: 15px;
+}
+.legal ul {
+  display:flex;
+  width: 100%;
+  justify-content: space-evenly;
+  font-weight: bold;
+  padding-right: 25px;
+}
+
+@media screen and (max-width: 1204px) {
+  .ledger-menu {
+    display: inline-block;
+    margin-bottom:15px;
+    width: 70%;
+  }
+
+  .ledger-menu h2.ledger-table-heading{
+    text-align: center;
+    font-size:1.5em;
+    width:80%;
+    
+  }
+}
+@media screen and (max-width: 600px) {
+
+  .ledger-table{
+    padding: 10px 4%;
+}
+
+  .ledger-amount {
+    width: 98%;
+    padding: 20px 1%;
+    margin-left:2%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(245, 245, 245) , transparent 100%)
+  }
+
+  .ledger-menu {
+    display: block;
+    margin-bottom:15px;
+    width: 98%;
+  }
+
+  .ledger-menu h2.ledger-table-heading{
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px auto;
+    font-size:1.5em;
+    width:50%;
+  }
+
+  .td-name, .td-amount, .td-date{
+    font-size:.7em;
+  }
+
+  th{
+    font-size: .8em;
+  }
+  tr td button {
+    font-size: .6em;
+  }
+
+  .ledger-view-modal {
+    left: 10%;
+    width: 70%;
+    top: 90%;
+}
+
+}
+
+/* nav.... */
+@media(max-width: 500px) {
+  .fa{
+    margin-right: 10px;
+  }
+  #nav-items {
+    display: none;
+    flex-flow: column wrap;
+    background: rgba(17, 16, 16, 0.9);
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transition: 500ms ease-in-out all;
+    margin: 0px;
+  }
+ #nav-items li{
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+ }
+
+i.fa-times{
+  font-size: 100px;
+  margin-top: 20px;
+  align-self: center;
+  margin-left: 30px;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+ }
+ #nav-items li a{
+  margin: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 10px;
+ }
+  .icon{ display: block; }
+  .first-div { margin: auto; }
+  .donate-btn { background-color: darkgreen; border:none;}
+  .get-involved-btn { display: none; vertical-align: middle;}
+  footer{
+    padding:10px;
+  }
+} 
