@@ -163,6 +163,7 @@ a {
 	display: grid;
 	grid-template-columns: 120px 80px;
 	grid-template-rows: 1;
+	margin: auto;
 	margin-bottom: 24px;
 }
 
