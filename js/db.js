@@ -228,4 +228,9 @@ let data = [{
   cloudinary: "https://res.cloudinary.com/gidmak/image/upload/v1566564580/Gideon_a8zi2i.jpg",
   message: "Worked on the gallery page and repaired deadlinks in the home page",
   resume: "https://gidmak.netlify.com/"
+},{
+  name: "Chinonso Emmanuel",
+  cloudinary: "https://res.cloudinary.com/chinonso98/image/upload/v1566573894/IMG_20180401_111408_y4hkcf.jpg",
+  message: "Built the image gallery for the gallery page.",
+  resume: "https://emmahchinonso.github.io/html-CV-sample/#contact-form"
 }]
