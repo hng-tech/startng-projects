@@ -1,7 +1,7 @@
 let data = [{
   name: "@ruqayaah",
   cloudinary: "https://res.cloudinary.com/ruqayaah/image/upload/w_400,h_400,c_scale/ar_16:9,c_fill,e_sharpen:116,g_auto,h_398,r_6,w_509/v1566635640/n3xpcvdrmrfaxjh6jt8t.jpg",
-  message: "Team Lead",
+  message: "Team Lead and project manager.",
   resume: "https://ruqayaahh.github.io/Resume/",
 }, {
   name: "@fego",
@@ -21,7 +21,7 @@ let data = [{
 }, {
   name: "@drey",
   cloudinary: "https://res.cloudinary.com/drey/image/upload/w_400,h_400,c_scale/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1566498126/20190730_102625_qwqiez.jpg",
-  message: "Team deputy.Head of ui/ux design team and worked with the front-end.",
+  message: "Team deputy. Head of UI/UX team and worked with the front-end.",
   resume: "https://drey771.github.io/",
 }, {
   name: "@Tobby",
@@ -71,7 +71,7 @@ let data = [{
 },{
   name: "@Alex",
   cloudinary: "https://res.cloudinary.com/pemualexandra/image/upload/w_400,h_400,c_scale/v1566641587/IMG_20190417_151731_1_qy85gh.jpg",
-  message: "I tested the site and provided feedback and suggestions for improvement",
+  message: "Tester and social media manager.",
   resume: "https://alex-pemu.github.io/StartNG-CV-TASK/",
 },{
   name: "@siyfa",
@@ -81,7 +81,7 @@ let data = [{
 },{
   name: "@Linda Adamu",
   cloudinary: "https://res.cloudinary.com/draot9p1u/image/upload/w_400,h_400,c_scale/v1566621012/Linda.jpg",
-  message: "Back-End Developer",
+  message: "Back-End Developer.",
   resume: "https://lindyadam.github.io/web/",
 },{
   name: "@peenarz",
@@ -106,7 +106,7 @@ let data = [{
 },{
   name: "@Joe Freely",
   cloudinary: "https://res.cloudinary.com/lestrange/image/upload/w_400,h_400,c_scale/v1566509908/My%20Images/Joe_Freely_loal7c.jpg",
-  message: "I edited the section 5 of the website",
+  message: "I edited the section 5 of the website.",
   resume: "https://nsicache.github.io",
 },{
   name: "@leela French",
