@@ -244,11 +244,6 @@ let data = [{
   message: "I worked the Volunteer page.",
   resume: "https://jtoloyede0.github.io/Johnson.html/"
 },{
-  name: "Elizabet Yessiien",
-  cloudinary: "https://cloudinary.com/console/media_library/asset/image/upload/cv_photo_qpsvb2",
-  message: "Testing.",
-  resume: "https://elizabetyessiien.github.io/lizarepo/"
-},{
   name: "sammielas",
   cloudinary: "https://res.cloudinary.com/samflicks/image/upload/v1566553287/IMG_20190615_074237_c3sghc.jpg",
   message: "Supported UI/UX design.",
