@@ -226,11 +226,51 @@ let data = [{
 },{
   name: "Gideon Markus",
   cloudinary: "https://res.cloudinary.com/gidmak/image/upload/v1566564580/Gideon_a8zi2i.jpg",
-  message: "Worked on the gallery page and repaired deadlinks in the home page",
+  message: "Worked on the gallery and home page",
   resume: "https://gidmak.netlify.com/"
 },{
   name: "Chinonso Emmanuel",
   cloudinary: "https://res.cloudinary.com/chinonso98/image/upload/v1566573894/IMG_20180401_111408_y4hkcf.jpg",
   message: "Built the image gallery for the gallery page.",
   resume: "https://emmahchinonso.github.io/html-CV-sample/#contact-form"
+},{
+  name: "Ej",
+  cloudinary: "https://res.cloudinary.com/duqfjfwfw/image/upload/v1566570886/Image%201.jpg",
+  message: "Assisted the UI/UX team.",
+  resume: "https://eyej.github.io/HNG-Internship/"
+},{
+  name: "JT_Oloyede",
+  cloudinary: "https://res.cloudinary.com/jtoloyede/image/upload/v1566586075/HNG%20Internship/Oloyede_Johnson2_1_x8fk5x.jpg",
+  message: "I worked the Volunteer page.",
+  resume: "https://jtoloyede0.github.io/Johnson.html/"
+},{
+  name: "Elizabet Yessiien",
+  cloudinary: "https://cloudinary.com/console/media_library/asset/image/upload/cv_photo_qpsvb2",
+  message: "Testing.",
+  resume: "https://elizabetyessiien.github.io/lizarepo/"
+},{
+  name: "sammielas",
+  cloudinary: "https://res.cloudinary.com/samflicks/image/upload/v1566553287/IMG_20190615_074237_c3sghc.jpg",
+  message: "Supported UI/UX design.",
+  resume: "https://wonderful-montalcini-4f77c9.netlify.com/"
+},{
+  name: "Olajide Ismail Olayinka",
+  cloudinary: "https://res.cloudinary.com/olajideismail/image/upload/v1566562615/OlajideIsmail_mbe87r.png",
+  message: "Testing and brainstorming ideas.",
+  resume: "https://ismail26.github.io/aboutismail.github.io/"
+},{
+  name: "Chemicalbay",
+  cloudinary: "https://res.cloudinary.com/chemicalbay/image/upload/v1566587199/samples/zv78oczidvvvkgchkujm.jpg",
+  message: "Testing.",
+  resume: "https://chemicalbay.github.io"
+},{
+  name: "Oluwaseun Adejimi",
+  cloudinary: "https://res.cloudinary.com/oluwaseunadejimi/image/upload/v1566669381/IMG-20190819-WA0047_kij7mn.jpg",
+  message: "Frontend support.",
+  resume: "https://seunadejimi.github.io/My-CV/oluwaseun-a.html"
+},{
+  name: "TechAccountant",
+  cloudinary: "https://res.cloudinary.com/aoladapo/image/upload/v1566580234/me_pj8rwp.jpg",
+  message: "Review and made suggestions.",
+  resume: " https://aoladapo.github.io/HNG6/"
 }]
