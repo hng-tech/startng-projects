@@ -45,5 +45,6 @@ const displayProfile = (data) => {
   })
 }
 
+
 displayProfile(data);
 // Form validation
