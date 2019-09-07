@@ -32,6 +32,13 @@
 
 .main__buttons {
 	font-size: 1.2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.main__buttons > * {
+	margin: 8px;
 }
 
 /* Help section */
