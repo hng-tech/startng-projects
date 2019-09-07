@@ -231,7 +231,8 @@ main{
 /*style to make image appear in gallery-like structure*/
 /*picture on mobile*/
 #team-list{
-    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
     width:100%;
     text-align: center;
 }
