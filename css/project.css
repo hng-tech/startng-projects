@@ -1,0 +1,220 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* TOP NAV STYLING */
+
+ul.topnav {
+    height: 60px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    animation: 2s ease-out 0s 1 dropDown;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+ul.topnav li {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {
+    color: #FF1493;
+}
+
+ul.topnav li a.active {
+    color: #FF1493;
+    font-weight: bold;
+}
+
+ul.topnav li.left {
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li,
+    ul.topnav li.left {
+        float: none;
+    }
+    ul.topnav {
+        height: auto;
+    }
+}
+
+
+/* HERO IMAGE STYLING */
+
+.hero-image {
+    margin-top: 3.7em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/xavier/image/upload/v1567607207/projects-banner_b4xfof.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: inherit;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+    background-color: #4674ea;
+    width: 150px;
+    height: 50px;
+    border-radius: 126px;
+    border: 1px solid #4674ea;
+}
+
+button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    transition: all 0.5s ease-in !important;
+}
+
+button a:hover {
+    color: #FF1493;
+}
+
+@media screen and (max-width: 600px) {
+    .hero-image {
+        margin-top: 400px;
+    }
+}
+
+
+/* FLEX-CONTAINER STYLING FRANCIS-XAVIER */
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+}
+
+.flex-container-active {
+    margin: 25px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+div.flex-container-text {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.project-active {
+    color: #FF1493;
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        height: auto;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mail-box {
+    margin-bottom: 1rem;
+}
+
+.address {
+    margin-bottom: 1rem;
+}
+
+.mail {
+    text-decoration: none;
+    color: #676767;
+    transition: all 0.5s ease-in;
+}
+
+.mail:hover {
+    color: #FF1493;
+}
+
+.social-media-handles {
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+.social-media-handles a {
+    text-decoration: none;
+    color: initial;
+}
+
+.fa-twitter {
+    color: #38A1F3;
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+.fa-instagram {
+    color: #3f729b;
+    font-size: 2rem;
+}
+
+.reg {
+    font-size: 0.8rem;
+    background-color: #FF1493;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -2rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+}

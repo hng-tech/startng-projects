@@ -1,0 +1,381 @@
+/*GIFTAPAD LOGO*/
+
+#giftapadlogo img {
+    height: 20%;
+    width: 10%;
+    margin-top: -10px 0 0 0px;
+}
+
+
+/*VOLUNTEER PICS*/
+
+#first-col img {
+    height: 50%;
+    width: 70%;
+}
+
+
+/**/
+
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+ul {
+    margin: -20px;
+    padding: -10px;
+}
+
+
+/* Header */
+
+header {
+    background: white;
+    padding-top: 10px;
+    /*min-height: 30px;*/
+    /* border-bottom:#e8491d 3px solid;*/
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header li {
+    /* float:left;*/
+    display: inline;
+    padding: 0px 40px 0 20px;
+}
+
+header #giftapadlogo {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: -40px;
+}
+
+header .highlight,
+header .current a {
+    color: #FF1493;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+
+/*SHOWCASE*/
+
+#showcase {
+    min-height: 400px;
+    background: url(https://res.cloudinary.com/xavier/image/upload/v1567192864/contact-us-banner_lppyxi.jpg);
+    text-align: center;
+    color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 600px) {
+    .cfa {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (min-width: 340px) {
+    .logo-text-sm {
+        margin-top: 50px !important;
+    }
+}
+
+.section-padding-sm {
+    padding: 50px 0px;
+}
+
+.section-title {
+    margin-top: 60px;
+}
+
+.section-title h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-top: 0;
+    color: #1b1b1b;
+    margin-top: -20px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.section-title h2::before {
+    position: absolute;
+    left: 20px;
+    top: 75px;
+    height: 2px;
+    width: 70px;
+    background: #ddd;
+    content: "";
+    margin-left: -15px;
+}
+
+.section-title p {
+    padding: 0px 250px;
+}
+
+.contact-ara {
+    background: #ffffff;
+}
+
+.contact-form {
+    margin-left: -10px;
+}
+
+.form-control {
+    display: block;
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #000;
+    background-color: #676767;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 20px 30px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.form-control:focus {
+    border-color: #dddddd;
+    outline: 0;
+    box-shadow: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1) inset;
+}
+
+.contact-form button {
+    display: inline-block;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #337ab7;
+    background-color: #4674EA;
+    font-weight: 600;
+    width: 200px;
+    margin-bottom: 0;
+    border-radius: 30px;
+}
+
+.contact-form button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+#contact .text-success,
+#contact .text-danger {
+    display: none;
+}
+
+.text-success {
+    text-align: center;
+    background: #3c763d;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.text-danger {
+    text-align: center;
+    background: red;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+    color: #ff0000;
+}
+
+.single-contact-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.single-contact-info i {
+    font-size: 40px;
+    color: #000;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    background: #4674EA !important;
+    border-radius: 50%;
+    line-height: 80px;
+}
+
+.single-contact-info h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #fff;
+}
+
+.single-contact-info p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+.single-contact-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.single-contact-info i {
+    font-size: 40px;
+    color: #000;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 80px;
+}
+
+.single-contact-info h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #000000;
+}
+
+.single-contact-info p {
+    margin-bottom: 0;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.footer-area {
+    background: #4674EA;
+}
+
+.footer-text p {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.social-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #000 !important;
+}
+
+.footer-text h4 {
+    color: #000;
+    letter-spacing: 3px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 7px 7px;
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+
+.social-links ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    color: #000 !important;
+}
+
+.social-links ul li a {
+    display: block;
+    color: #000 !important;
+}
+
+.contact-form-design-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+#contact-form{
+    width: 250%;
+}
+input{
+    height: 100px;
+}
+.footer-area{
+    padding-top: 2%;
+}

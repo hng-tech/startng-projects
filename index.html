@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gift-A-Pad</title>
+    <meta name="description" content="Giftapad main aim is to promote a healthy menstrual hygiene by distributing sanitary products and creating awareness. Help impact a life.">
+    <meta name="keywords" content="pad,  healthy, menstrual, healthy menstural hygiene, sanitary products">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--adding tab icon image-->
+   <link rel="icon" type="image/png" href="https://res.cloudinary.com/ezeko/image/upload/v1567192680/favicon_2_zwujoa.png">
+   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  </head>
+    <body>
+      <section>
+      <header>
+      <div>
+          <a href="index.html">
+        <img id="logo" src="https://res.cloudinary.com/nkechi-christabel/image/upload/v1567206514/otnnkwoslqs04bzmln5d.png" alt="Logo"></a>
+          </div> 
+    
+        <nav id="navbar">
+          <div class="nav-cont-small" onclick="hamburgerMenu(this)">
+              <div class="bar-1"></div>
+              <div class="bar-2"></div>
+              <div class="bar-3"></div>
+          </div>
+          <div class="navSmall">
+              <div><a href="about.html" class="nav-links">About</a></div>
+              <div><a href="https://forms.gle/97kHEfjkLAZzqHWE9" class="nav-links" target=_blank>Membership</a></div>
+              <div><a href="team.html" class="nav-links">Team</a></div>
+              <div><a href="contact.html" class="nav-links">Contact Us</a></div>
+          </div>
+      <ul id="nav-container">
+        <li><a href="about.html" class="nav-links">About</a></li>
+        <li><a href="https://forms.gle/97kHEfjkLAZzqHWE9" class="nav-links" target=_blank>Membership</a></li>
+        <li><a href="team.html" class="nav-links">Team</a></li>
+        <li><a href="projects.html" class="nav-links">Projects</a></li>
+        <li><a href="contact.html" class="nav-links">Contact Us</a></li>
+      </ul>
+    </nav>
+    </header>
+    
+    
+      <div id="img-container">
+      <!-- <img id="image" src="" alt="img-banner"> -->
+      
+      
+        <div id="banner-text">
+          <h1>Live with dignity</h1>
+            <p> We aim to promote a healthy menstrual hygiene by<br>distributing sanitary products and creating awareness.<br>Help impact a life.</p>
+        
+        <button><a href="https://rave.flutterwave.com/pay/gifta_a_pad" target="_blank">Donate Now</a></button>
+        
+      </div>
+    </div>
+      </section> 
+        
+      <section class="container">
+        <div class="videoWrapper">
+        <video src="https://res.cloudinary.com/giftapad/video/upload/v1567212745/GiftaPad_i6mbj1.mp4" controls preload="auto"></video></div>
+      </section>
+      
+    
+     <main>
+        <!-- SECTION B -->
+        <section class="section-b">
+            <h1 class="title-b">Did you know?</h1>
+            <p>The United Nations Educational, Scientific and Cultural Organisation (UNESCO) report an estimate of one in ten girls 
+                in Sub-Saharan Africa who miss school during their menstrual cycle.
+            </p>
+        </section>
+      <br>
+        
+        <!-- SECTION C -->
+        <section class="section-c">
+            <div class="img">
+                <img src="https://res.cloudinary.com/nkechi-christabel/image/upload/v1567206110/iwuyhmfml7ig1iypwjhm.jpg" alt="Girl" class="mission-img">
+            </div>
+            <div class="mission">
+                <h1>Our Mission</h1>
+                <p>To raise a nationwide awareness and a global campaign on the right of the girl child
+                    to a monthly availability of personal hygiene supplies.
+                </p>
+            </div>
+        </section>
+         <br>
+    </main>
+     <div>
+       <h2 style="text-align:center"> SPONSORS</h2> 
+        </div>
+        <section id="sponsor-logo">
+     <a href="https://flutterwave.com/" target="-blank"><img src="https://res.cloudinary.com/giftapad/image/upload/v1567324302/Flutterwave_amtym0.png" alt="flutterwave-logo" width="200px"></a>
+       <a href="https://hng.tech/" target="-blank"><img  src="https://res.cloudinary.com/giftapad/image/upload/v1567323395/4vHpZnpa_h4bryo.jpg" alt="hng-log" width="200px"></a>
+         </section>    
+     
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="mail-box">
+            <p><a href="mailto: info@giftapad.com" class="mail">info@giftapad.com</a></p>
+        </div>
+        <div class="address">
+            <p>23, Ogundana Street, Off Allen Avenue, Ikeja, Lagos</p>
+        </div>
+        <div class="social-media-handles">
+            <a href="https://twitter.com/GiftAPad" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/GiftAPad" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/giftapad/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="reg">GiftAPad copyright 2019. All rights resreved.</p>
+    </footer>
+    
+
+    <script src="https://kit.fontawesome.com/64ab2a0281.js"></script>
+
+    <!-- Hamburger menu script added here -->
+    ​<script>
+        var acc = document.getElementsByClassName("nav-cont-small");
+var i;
+        for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("new");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+    </script>
+      
+  </body>
+</html>

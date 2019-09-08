@@ -1,0 +1,320 @@
+/*GIFTAPAD LOGO*/
+
+#giftapadlogo img{
+    height: 20%;
+    width: 10%;
+    /* margin-top: -10px 0 0 0px; */
+    
+}
+
+
+
+
+body{
+    background-color:azure;
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+}
+#team{
+    text-align: center;
+    margin-left:2%;
+    margin-right: 2%;
+}
+
+/* header{
+    background:white;
+    position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  height: 80px;
+ background-color: #FFFFFF;
+ display: flex;
+} */
+
+header{
+    position: fixed;
+     z-index: 1;
+     width: 100%;
+     top: 0px;
+     height: 80px;
+     margin-top: 0px;
+    background-color: #FFFFFF;
+    /* added */
+   /* animation: 2s ease-out 0s 1 slideInFromLeft; */
+   /* another one */
+   animation: 2s ease-out 0s 1 dropDown;
+   }
+/* 
+ul{
+    margin:-20px;
+    padding:-10px;
+} */
+/* Header */
+
+/*header{
+    background:white;
+    margin-top:0;
+    position:fixed;
+    /*min-height: 30px;*/
+   /* border-bottom:#e8491d 3px solid;*/
+/*}*/
+
+
+
+ul {
+    float: right; /* corrected the reversing order of the nav-bar items (Angela) */
+    list-style-type: none;
+    margin-top: -50px;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float:left;
+    
+  }
+  
+  li a {
+    display: block;
+    color: #676767;
+    text-align: center;
+    padding: 10px 15px; /* Adjusted padding on the navbar (Angela) */
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  nav#navbar {
+    position: relative;
+  }
+  
+  nav div.nav-cont-small {
+      display: none;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+  
+  }
+  
+  nav div.nav-cont-small div {
+    width: 30px;
+    height: 5px;
+    background-color: darkslategray;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .new .bar-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px 6px);
+  }
+  
+  .new .bar-2 {
+      opacity: 0;
+  }
+  .new .bar-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px -8px);
+  }
+  
+  div.navSmall {
+      padding: 0 18px;
+  background-color: #cccccc;
+  max-height: 0;
+  overflow: hidden;
+  /* transition: max-height 0.2s ease-out; */
+  z-index: 1;
+  position: absolute;
+  bottom: -110px;
+  right: 5px;
+  }
+  
+  ul#nav-container {
+      display: inline;
+  }
+  
+  @media only screen and (max-width: 768px){
+  
+    nav div.nav-cont-small {
+        display: inline-block !important;
+    }
+    ul#nav-container  {
+        display: none !important;
+    }
+  }
+  @media screen and (min-width: 769px){
+      div.navSmall {
+          display: none;
+      }  
+      .section-c {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
+      div.img, div.mission {
+          flex: 1;
+      }
+      
+      
+  }  
+
+header a{
+    color:black;
+    text-decoration: none;
+    font-size:16px;
+}
+
+header li{
+   /* float:left;*/
+    display:inline;
+    /* padding: 0px 40px 0 20px; */
+}
+
+/* header #giftapadlogo{
+    float:left;
+} */
+
+
+header nav{
+    /* float:right;
+    margin-top:-40px; */
+    
+
+}
+
+
+header div.container {
+    display: flex;
+}
+header div ul {
+    margin-left: auto;
+}
+header div.container div#gifapadlogo img {
+    width: 50%;
+}
+header div ul li {display: inline;
+padding: 20px;}
+
+
+a.current {
+    color:#FF1493;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:blue;
+    font-weight:bold;
+}
+.container{
+    width:100%;
+    margin:auto;
+    overflow:hidden;
+}
+
+p#heading {
+    text-align: center;
+    font-size:20px;
+    margin-top:100px;
+}
+main{
+    padding-bottom: 5%;
+    
+    min-height: 14000px;
+}
+#team-list{
+    height: 300px;
+    weight: auto;
+ }
+/*Team image styling*/
+#team-list img{
+    height: 100px;
+    width: 100px;
+    border-radius: 60%;
+}
+
+/*style to make image appear in gallery-like structure*/
+/*picture on mobile*/
+#team-list{
+    float:center;
+    width:100%;
+    text-align: center;
+}
+/* display for tablets*/
+
+@media (min-width:400px){
+    #team-list{
+        float: left;
+        width:50%;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    main{
+    padding-bottom: 5%;
+    
+    min-height: 10500px;
+}
+}
+
+@media (min-width:720px){
+    #team-list{
+        float: left;
+        width:33%;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    main{
+    padding-bottom: 5%;
+    
+    min-height: 5000px;
+}
+}
+/*big screen display*/
+@media (min-width:1000px){
+    #team-list{
+        float: left;
+        width:25%;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    main{
+    padding-bottom: 5%;
+    
+    min-height: 3000px;
+}
+    
+}
+figcaption{
+    font-weight: bold;
+    
+}
+#team-list{
+    height: 300px;
+    width: 200px;
+    margin:2%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+#team-list:hover{
+    transform: scale(1.2);
+    color: rgb(14, 130, 231);
+}
+h1{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#footer{
+    display:none;
+}
+
+footer{
+    display:none;
+        margin-top: 6rem;
+        display: none;
+        background-color: #FF1493;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    
+}
+
+footer a{
+    text-decoration: none;
+}
