@@ -1,0 +1,173 @@
+body {
+  display: block;
+  line-height: 1.5em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+  font-family: lato;
+}
+#write-up {
+  text-align: justify;
+}
+
+.write-up-header{
+  text-align: center;
+}
+#sidebar-img1{
+    position: fixed;
+    width: 10%;
+    height: 10%;
+    background: #fff;
+    display: block;
+}
+
+.main{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+#logo {
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+
+.main-block{
+  width: 50%;
+  margin-left: 15%;
+  margin-top: 100px;
+    float: left;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.main-block h1{
+    font-family: lato;
+    color: #7ce4ac;
+}
+
+
+.clr{
+    clear: both;
+}
+
+
+#right-sidebar{
+    float: right;
+    margin-top: 30px;
+    width: 20%;
+    font-size: 17px;
+    margin-top: 100px;
+}
+#right-sidebar ul li {
+    padding-top: 4px;
+    padding-bottom: 14px;
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.5em;
+    border-bottom: 1px solid rgba(100,100,100,0.3)
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+    color: #1e934c;
+}
+
+#sidebar-img2{
+    position: relative;
+    width: 180px;
+    height: 200px;
+    float: right;
+    margin-top: 500px;
+    margin-right: 30px;
+     display: block;   */
+  }
+#footer {
+  clear: both;
+  background-color: #7ce4ac;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+/****MISSION PAGE *******/
+#mission-statement-block {
+  padding: 10px;
+  margin-bottom: 30px;
+  /*background-color: #7ce4ac;*/
+
+}
+#mission-statement-block p{
+
+}
+.mission-div {
+  padding-bottom: 30px;
+}
+
+/*******CONTACT PAGE********/
+#social-div {
+  background-color: #1E934C;
+  height: 200px;
+  text-align: center;
+}
+#social-div h2 {
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#contact-img-div {
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 50px;
+  margin-left: 20%;
+  height: 150px;
+
+}
+@media only screen and (max-width: 1300px) {
+  #social-div{
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #social-div{
+    height: 350px;
+  }
+}
+
+#contact-img-div img{
+  height: 30px;
+  width: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.contact-img {
+  display: inline-block;
+  float: left;
+  text-align: center
+
+}
+.contact-img p {
+  color: white;
+
+}
+
+#objectives {
+  display: block;
+  margin-top: 40px;
+}
