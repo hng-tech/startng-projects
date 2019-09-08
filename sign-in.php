@@ -20,7 +20,7 @@ if (isset($_POST['login'])) {
         //Display Error here
         echo "<script type='text/javascript'>alert('Invalid Details Provided')</script>";
         echo "<script type='text/javascript'>
-    document.location = 'login.php'
+    document.location = 'sign-in.php'
 </script>";
     } else {
         //process login here
