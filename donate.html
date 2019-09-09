@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechCare Foundation | Donate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon"  href="assets/logo.png">
+</head>
+<body style="background: #fff;">
+	<header>
+		<header>
+		
+		<div class="nav">
+			<div class="logo">
+				<!--<P>TechCare</P><h3>FOUNDATION</h3>-->
+				<a href="index.html"><img src="assets/logo.png" alt="TechCare" style="width: 100%; height: 38%;"></a>
+			</div>
+			<div class="navbar">
+				<ul id="menu">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li>
+					<div class="dropdown">
+  					<button class="dropbtn">ABOUT US</button>
+					<div class="dropdown-content">
+					    <a href="aboutus.html">Who we are</a>
+					    <a href="resource.html">Our Resources</a>
+					    
+ 					</div>
+					</div></li>
+					<li><a href="team.html">OUR TEAM</a></li>
+					<li class="donate-button"><a href="donate.html">Donate Now</a></li>
+					<li><a href="volunteer.html">Log In | VOLUNTEER</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+<script>
+    const API_publicKey = "FLWPUBK-e64fe20ee697eeabe87f4db197f54571-X";
+    var amountType = 1; // 1 = select, 2 = custom
+    
+    function validation() {
+        
+        let fullname = document.getElementById('fullname');
+        let email = document.getElementById('email');
+        let error = document.getElementById('error');
+        let amount = '';
+        if(amountType === 1) {
+            // select amount
+            amount = document.getElementById('amount');
+        } else if(amountType === 2) {
+            // custom amount
+            amount = document.getElementById('cusAmount');
+        }
+        
+        console.log('the value of amount to donate is : ' + amount.value);
+        
+        if(fullname.value === '' || email.value === '' || amount.value === '') {
+            error.style.display = 'block';
+            error.textContent = "Please fill the form correctly to donate; All fields are required.";
+        } else if (amount.value < 1) {
+            error.style.display = 'block';
+            error.textContent = "Donation amount must be greater than 1.";
+        } else {
+            payWithRave();
+        }
+    }
+    
+    function checkOther() {
+        let amount = document.getElementById('amount');
+        let amountArea = document.getElementById('amountArea');
+        let customAmountArea = document.getElementById('customAmountArea');
+        
+        if(amount.value === 'other') {
+            amountArea.style.display = 'none';
+            customAmountArea.style.display = 'block';
+            amountType = 2;
+        }
+    }
+
+    function payWithRave() {
+        // get form details from form
+        let email = document.getElementById('email');
+        let amount = '';
+        if(amountType === 1) {
+            // select amount
+            amount = document.getElementById('amount');
+        } else if(amountType === 2) {
+            // custom amount
+            amount = document.getElementById('cusAmount');
+        }
+        
+        var x = getpaidSetup({
+            PBFPubKey: API_publicKey,
+            customer_email: email.value,
+            amount: amount.value,
+            customer_phone: "234099940409",
+            currency: "NGN",
+            txref: "rave-123456",
+            meta: [{
+                metaname: "flightID",
+                metavalue: "AP1234"
+            }],
+            onclose: function() {},
+            callback: function(response) {
+                var txref = response.tx.txRef; // collect txRef returned and pass to a 					server page to complete status check.
+                console.log("This is the response returned after a charge", response);
+                if (
+                    response.tx.chargeResponseCode == "00" ||
+                    response.tx.chargeResponseCode == "0"
+                ) {
+                    // redirect to a success page
+                    window.location.href = 'https://techcarefoundation.000webhostapp.com/thankYou.html';
+                } else {
+                    // redirect to a failure page.
+                }
+
+                x.close(); // use this to close the modal immediately after payment.
+            }
+        });
+    }
+</script>
+
+<form>
+    
+</form>
+	
+	<section>
+	    <div class="donation-form" style="width: 50%; margin: 20px auto; border: solid thin #ccc; padding: 20px; ">
+	        
+			<form action="/action_post.php">
+				
+			 <div class="container">
+			    <h1>Donate</h1>
+			    <p><i>kindly fill all areas needed on the form or contact us for annonymous givings.</i></p>
+			    <hr>
+                <p id="error" style="width: 100%; padding: 8px; margin-bottom: 10px; background: pink; border: solid thin red; display: none;"></p>
+			    <label for="Full Name"><b>Full Name</b></label>
+			    <input type="text" placeholder="Enter full name" name="fullname" id="fullname">
+
+			    <label for="email"><b>Email</b></label>
+			    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                
+                <div id="amountArea">
+    			    <label for="psw"><b>Amount</b></label>
+    			    <select class="number" name="amount" id="amount" onchange="checkOther()">
+    			        <option value="">--select--</option>
+    			        <option value="500">&#8358; 500</option>
+    			        <option value="1000">&#8358; 1,000</option>
+    			        <option value="5000">&#8358; 5,000</option>
+    			        <option value="10000">&#8358; 10,000</option>
+    			        <option value="20000">&#8358; 20,000</option>
+    			        <option value="50000">&#8358; 50,000</option>
+    			        <option value="100000">&#8358; 100,000</option>
+    			        <option value="500000">&#8358; 500,000</option>
+    			        <option value="1000000">&#8358; 1,000,000</option>
+    			        <option value="other">Other</option>
+    			    </select>
+			    </div>
+			    
+			    <div id="customAmountArea" style="display: none;">
+			        <label for="psw"><b>Amount</b></label>
+			        <input type="number" id='cusAmount' name='cusAmount' class='number' placeholder="Enter Amount you want to donate" min="1">
+			    </div>
+
+			    <hr>
+
+			    
+			    <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+			    <button type="button" class="registerbtn" id="donate-btn" onClick="validation()">Donate</button>
+                <!--<button type="button" onClick="payWithRave()">Pay Now</button>-->
+			    
+			  </div>
+			  
+            </form>
+		</div>
+
+	</section>
+	
+	 <!--footer-->
+            <div class="footer">
+    <!--footer content-->        
+                <div class="footer-content">
+      
+     <!--About-->               
+                    <div class="footer-section about" style="text-align: justify;">
+                    
+                    <p>We are a non-profit organization dedicated to ensuring less privileged children have equal opportunites educationally in our society.</p>
+                    <br>
+            
+    <!--Contact-->
+                        <div class="contact">
+                            <span><i class="fas fa-phone"></i> &nbsp; 234-813-333-333</span><br>
+                            <span><i class="fas fa-envelope"></i> &nbsp; techcarefoundation@gmail.com</span><br>
+                            <span><i class="fas fa-address-book"></i> &nbsp; 3, Birrel Avenue Sabo, Lagos Nigeria</span>
+                        </div>
+                        <br>
+            
+    <!--Socials-->
+                        <div class="socials">
+                            <a href="http://bit.ly/2ZIdIdE" target="_blank"><i class="fab fa-facebook fa_custom1"></i></a>
+                            <a href="http://bit.ly/2ZowT0S" target="_blank"><i class="fab fa-instagram fa_custom2"></i></a>
+                            <a href="http://bit.ly/2Zy3VLj" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="http://bit.ly/32mObIV" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div></div>
+
+    <!--Quick Links-->       
+                        <div class="footer-section links"> 
+                        <h2><span>Quick Links</span></h2>
+                        <br>
+                        <ul>
+                            <a href="volunteer.html"><li>Volunteer</li></a>
+                            <a href="team.html"><li>Our Team</li></a>
+                            <a href="aboutus.html"><li>About us</li></a>
+                            <a href="resources.html"><li>Resources</li></a>
+                            
+                        </ul>
+                    </div>
+
+    <!--Contact Form-->
+                    <div class="footer-section contact-form">
+                        <h2>Have Questions?</h2><br>
+                        <p><strong>Send us a message</strong></p>
+                        <br>
+                        <form action="index.html" method="post">
+                            <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                            <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                            <button type="submit" class="btn btn-big contact-btn"> <i class=
+                            "fas fa-envelope"></i>
+                            Send</button>
+                        </form>
+                    </div>
+                </div>
+    <!--Footer Bottom-->
+                <div class="footer-bottom">
+                    &copy; techcarefoundation.com | Designed by Team Delhi
+                </div>
+            </div>
+	
+<footer id="footer"></footer>
+</body>
+</html>
