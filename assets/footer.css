@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+* {
+    outline: none;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+*, ::after, ::before, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --purple: rgb(99, 2, 102);
+    --purple2:rgb(61, 1, 65);
+    --dark: #000;
+    --font-family: 'Oswald', sans-serif;
+    --white: whitesmoke;
+    /* --success: rgb(2, 124, 23); */
+}
+
+h1 {
+    font: 2.4em 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+.heading {
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-wrapper {
+    padding: 20px;
+}
+
+.text-content {
+    word-wrap: break-word;
+    word-break: keep-all;
+    text-align: left;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    text-overflow: ellipsis;
+    font-size: 1.2em;
+    padding: 10px 5px;
+}
+
+
+.grid-element .brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.grid-element .brand--shape {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 25px;
+    height: 13px;
+    background: var(--white);
+    margin-bottom: 10px;
+}
+
+.grid-element .brand--shape::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 12px;
+    height: 14px;
+    background: var(--white);
+}
+
+/* .navlinks > .nav--btn > a, */
+.brand > span {
+    color: var(--white);
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.gray {
+    color: #ccc7c7;
+}
+
+.motto {
+    font-size: 1.3em;
+    font-family: var(--font-family);
+}
+.footer {
+    background: var(--purple);
+}
+
+
+.grid-display {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.grid-element {
+    width: 31%;
+    height: auto;
+    padding: 25px 20px;
+    color: #fff;
+}
+
+.grid-element:not(:last-child) {
+    margin-right: 20px;
+}
+
+.location{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.fas{
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.location > span {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+address {
+    font: 1.3em var(--font-family);
+    text-align: center;
+}
+
+
+
+.contact--form {
+    border: 2px solid #a0a0a0;
+    border-radius: 5px;
+    width: 350px;
+    padding: 10px 20px;
+}
+
+.footer .contact--form > .caption,
+.footer .grid-element  .title {
+    display: inline-block;
+    margin: 0 auto 25px;
+    padding: 20px 25px 5px;
+    border-bottom: 3px solid #a0a0a0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4em
+}
+
+
+.footer .contact--form > input:not(:last-child),
+.contact--form > .col-2 {
+    width: 100%;
+    height: 30px;
+    font-weight: 500;
+}
+
+.contact--form input {
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #a0a0a0;
+    transition: all 0.5s ease;
+}
+.footer .contact--form input:focus {
+    border-color: #a0a0a0;
+    font-weight: 600;
+}
+.contact--form > input[type="text"],
+.contact--form > .col-2 ,
+.aside--content .text-content > p{
+    margin-bottom: 30px;
+}
+
+.contact--form > .col-2 {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact--form > .col-2 > input {
+    width: 49%;
+    height: 100%;
+}
+
+.footer .contact--form > input[type="submit"] {
+    display: inline-block;
+    padding: 10px 15px;
+    background: var(--white);
+    color: var(--purple);
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 60%;
+    margin: 10px 20%;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s ease;
+    transform-origin: right;
+}
+
+.footer .contact--form > input[type="submit"]:hover {
+    background: var(--purple2);
+    color: var(--white)
+}
+
+@media screen and (max-width: 1020px) {
+    .grid-display {
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .grid-element {
+        width: 100%;
+        justify-self: center;
+        align-items: stretch;
+        padding: 20px 10px;
+    }
+
+    .contact--form {
+        margin: 20px auto;
+    }
+
+    .contact--form > input{
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .content-wrapper {
+        padding: 10px;
+    }
+
+    .contact--form {
+        width: 300px;
+        max-width: 300px;
+    }
+
+    
+}

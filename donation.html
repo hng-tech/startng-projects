@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/styled.css" />
+    <link rel="stylesheet" type="text/css" href="assets/ahome.css" />
+    <meta name="author" content="Team Rio">
+    <meta name="description" content="HelpAChild Foundation is a Non Profit Organization that focuses on the grouwth and well-being of a child">
+    <meta name="keywords" content="Donation, Charity, NGO, HelpAChild, Donate to HelpAChild">
+    <link rel="cannonical" href="https://www.helpachild.bindas.co">
+    <title>Donate To Help A Child | Help A Child Foundation</title>
+</head>
+
+<body>
+    
+    <div class="home-bg">
+        <div class="topnav" id="myTopnav">
+            <a href="index.php" class="as"><img src="https://res.cloudinary.com/bindasfs/image/upload/v1567628558/startng/helpAChildLogo1_a0ntag_eya8d5.png" alt="Help A Child Logo" class="header-icon"></a>
+            <a href="donation.html" class="nav-link btn join">Donate</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+            <a href="teampage.html" class="nav-link">Our Team</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="index.php" class="nav-link">Home</a>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+        <p class="intro">Donate to help the childern <br>for a better tommorrow</p>
+    </div>
+  
+          <!-- Donation Body -->
+    <section id="contact">
+            <div class="container-1" id="wrapper2">
+              <div class="box-1">
+                   <!-- donation-info -->
+            <div class="title">
+                <h2>Divided evenly</h2>
+                <p>Your Donations will be dividely evenly<br>across all projects</p>
+            </div>
+
+            <div class="title">
+                <h2>Transparency</h2>
+                <p>Your Donations will be accounted for<br>and declared publicly</p>
+            </div>
+
+            <div class="title">
+                <h2>Trustworthy</h2>
+                <p>Your Donations will be secured by Flutterwave<br>the most secure payment platform in Africa</p>
+            </div>
+            <!-- end of donation-info -->
+              </div>
+              <div class="box-1">
+                   <!--form-->
+            <div id="form">
+              <form method="post" action="javascript:;">
+                  <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+                  <p>Please fill the form below</p>
+                  <p id="err"></p>
+                  <hr>
+                  <input type="text" class="form-input" id="name" placeholder="Name*" required/><br><br>
+                  <input type="text" class="form-input" id="phone" placeholder="Phone*" required/><br><br>
+                  <input type="email" class="form-input" id="email" placeholder="Email*" required/><br><br>
+                  <input type="text" class="form-input" id="amount" placeholder="Donation Amount(Naira)*" required><br><br>
+                  <button class="btn btn-primary" href="javascript:;" id="donate">Donate Now</button>
+
+                  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+                  <script>
+             $(document).ready(function(){
+
+             $('button#donate').click(function(){
+              var name = $('#name').val();
+              var email = $('#email').val();
+              var phone = $('#phone').val();
+              var amount = $('#amount').val();
+              var err = $('#err');
+              var ret = name.split(" ");
+              var fname = ret[0];
+              var sname = ret[1];
+
+              if (name == '' || email == '' || phone == '' || amount == '') {
+                err.html('<span class="alert alert-danger">Please Fill All Fields</span>');
+                return false;
+              } else {
+
+              payWithRave(name, email, phone, amount, fname, sname);
+              } 
+
+
+            function payWithRave(name, email, phone, amount, fname, sname) {
+            const API_publicKey = "FLWPUBK_TEST-a330e3181e548e49b466db18f2b0e2ab-X";
+                var chargeResponse = "",
+                  trxref = "HACF" + Math.random();// add your transaction ref here
+                getpaidSetup({
+                  customer_email: email,// 
+                  amount: amount,
+                  currency: "NGN",
+                  country: "NG",
+                  custom_title: "HelpAChild Foundation",
+                  txref: trxref,
+                  PBFPubKey: API_publicKey,
+                  onclose: function(response) {},
+                  callback: function(response) {
+                    //flw_ref = response.tx.flwRef;
+                    console.log("Your payment was successful, You will be redirected shortly", response);
+                    if(response.tx.chargeResponseCode =='00' || response.tx.chargeResponse == '0') {
+                      success();
+                    } else {
+                      // redirect to a failure page.
+                    }
+                  }
+                });
+            }
+
+            function success() {
+              window.location.replace('success.html');
+            }
+
+
+             });
+            })
+          </script>
+              </form>
+          </div>
+          <!-- end of form-->
+            </div>
+          </section>
+
+    <footer class="footer">
+        <div class="footer">
+            <div class="footer-img"><img src="img/helpAChildLogo1_a0ntag.png" alt="" class="footer-icon">
+                <p class="footer-con">Challenging child protection</p>
+            </div>
+            <div class="address">
+                <p class="heads">CONTACT US</p>
+                <p class="contentss">3, Birrel Avenue, Sabo <br>Yaba, Lagos.</p>
+            </div>
+        </div>
+    </footer>
+<script src="assets/script.js"></script>
+</body>
+
+</html>

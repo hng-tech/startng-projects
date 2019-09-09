@@ -1,0 +1,620 @@
+/* homepage */
+
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.header-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.home-bg {
+    background: linear-gradient(rgba(161, 120, 120, 0.6), rgba(160, 121, 121, 0.6)), url("https://res.cloudinary.com/bindasfs/image/upload/v1567627578/startng/home-bg_ydrasm.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 20px 50px 150px 50px;
+}
+
+.intro {
+    padding: 120px 70px 0 70px;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.donate-btn {
+    margin-left: 70px;
+    font-weight: bold;
+    margin-top: 0;
+    line-height: 0px;
+}
+
+.btn {
+    background-color: #0c2461;
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.donate-btn:hover {
+    color: #0c2461;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.topnav a {
+    display: block;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #0c2461;
+}
+
+.topnav a.join {
+    color: #ffffff;
+    padding: 5px 20px;
+}
+
+.topnav a.join:hover {
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.as {
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.nav-link {
+    color: white;
+    border-bottom: 1px solid #0c2461;
+    margin: 15px 20px;
+    float: right;
+}
+
+.topnav a:hover {
+    font-weight: bold;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.nav-link {
+    color: black;
+    border-bottom: 2px solid #0c2461;
+}
+
+.content {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.content-head {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #242224;
+}
+
+.content-body {
+    text-align: center;
+    color: #242224;
+}
+
+.request {
+    width: 30%;
+    float: left;
+    margin: 10px 15px;
+}
+
+.request .main {
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 2px 15px rgb(61, 65, 61);
+}
+
+.request .main .head {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.request .main .body {
+    text-align: center;
+    font-size: 16px;
+}
+
+.main-bg1 {
+    background-color: #2D284E;
+}
+
+.main-bg2 {
+    background-color: #413a3a;
+}
+
+.main-bg3 {
+    background-color: #FFBD12;
+}
+
+.request .sub {
+    width: 50%;
+    margin: 25px auto 70px auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+}
+
+.newsletter {
+    width: 80%;
+    margin: 5px auto;
+    padding: 5px 10px 100px 10px;
+    box-shadow: 2px 2px 15px rgb(61, 65, 61);
+    clear: both;
+    background-color: #fff;
+    position: relative;
+    top: -30px;
+}
+
+.newsletter .contents {
+    width: 50%;
+    float: left;
+}
+
+.newsletter .contents .head {
+    font-size: 28px;
+    color: #0c2461;
+    font-weight: bold;
+    line-height: 0;
+    padding-left: 25px;
+}
+
+.newsletter .contents .body {
+    font-size: 20px;
+    color: #242224;
+    line-height: 0;
+    padding-left: 25px;
+}
+
+.newsletter .form {
+    width: 50%;
+    float: left;
+    padding-top: 30px;
+}
+
+.form-input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #0c2461;
+    border-radius: 5px;
+}
+
+.form-input:focus {
+    box-shadow: 1px 1px 15px #2D284E;
+}
+
+.submit {
+    background-color: #0c2461;
+    font-weight: bold;
+    color: #ffffff;
+    width: 30%;
+}
+
+.footer {
+    background-color: #0c2461;
+    clear: both;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+.footer-img {
+    width: 50%;
+    float: left;
+}
+
+.footer-icon {
+    width: 50px;
+    height: 50px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+.footer-con {
+    padding-left: 120px;
+    padding-top: 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 22px;
+}
+
+.address {
+    width: 50%;
+    display: inline-block;
+}
+
+.address .heads {
+    font-size: 18px;
+    font-weight: bold;
+    width: 20%;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* About */
+
+hr {
+    box-shadow: 1px 1px 15px #868086;
+}
+
+.about {
+    width: 90%;
+    margin: 25px auto;
+}
+
+.about .intros {
+    width: 60%;
+    float: left;
+}
+
+.about .intros .head {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #2D284E;
+}
+
+.about .intros .body {
+    font-size: 16px;
+    color: #413a3a;
+    padding-right: 15px;
+}
+
+.about .image {
+    width: 40%;
+    float: left;
+}
+
+.img {
+    width: 100%;
+    height: 250px;
+}
+
+.why {
+    padding-top: 30px;
+    clear: both;
+}
+
+.why .head {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #2D284E;
+}
+
+.why .body {
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 18px;
+    color: #413a3a;
+}
+
+.about-images {
+    margin: 50px auto 150px auto;
+    padding-bottom: 200px;
+}
+
+.about-images .img {
+    width: 25%;
+    float: left;
+}
+
+.asdf {
+    padding-left: 35px;
+}
+
+.about-images .img .img1 {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.about-images .img .content {
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 560px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .intro {
+        padding: 80px 0px 0 5px;
+        font-size: 24px;
+        color: #ffffff;
+    }
+    .donate-btn {
+        margin-left: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .home-bg {
+        padding: 20px 20px 150px 20px;
+    }
+    .nav-link {
+        color: white;
+        border-bottom: 0;
+        margin: 15px 20px;
+        float: right;
+    }
+    .content {
+        width: 90%;
+    }
+    .content-head {
+        font-size: 16px;
+    }
+    .content-body {
+        font-size: 14px;
+    }
+    .request {
+        width: 80%;
+        padding: 20px;
+        float: left;
+        margin: -15px 15px;
+    }
+    .request .main .head {
+        font-size: 16px;
+    }
+    .request .main .body {
+        font-size: 14px;
+    }
+    .request .sub {
+        font-size: 16px;
+        margin: 25px auto 25px auto;
+    }
+    .newsletter {
+        width: 90%;
+        clear: both;
+        padding: 5px 10px 120px 10px;
+        position: relative;
+        top: -20px;
+    }
+    .newsletter .contents {
+        width: 100%;
+        float: left;
+    }
+    .newsletter .contents .head {
+        font-size: 20px;
+        text-align: center;
+    }
+    .newsletter .contents .body {
+        font-size: 16px;
+        text-align: center;
+    }
+    .newsletter .form {
+        width: 100%;
+        float: left;
+        padding-top: 10px;
+    }
+    .footer-img {
+        width: 80%;
+    }
+    .footer-icon {
+        padding-left: 40px;
+    }
+    .footer-con {
+        padding-left: 40px;
+        padding-top: 0;
+    }
+    .address {
+        width: 80%;
+        display: inline-block;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+    /* About */
+    .about {
+        width: 90%;
+        margin: 10px auto 50px auto;
+    }
+    .about .intros {
+        width: 100%;
+    }
+    .about .intros .head {
+        font-size: 20px;
+    }
+    .about .intros .body {
+        font-size: 14px;
+    }
+    .about .image {
+        width: 100%;
+    }
+    .img {
+        width: 80%;
+        padding-left: 10%;
+    }
+    .why {
+        padding-top: 30px;
+    }
+    .why .head {
+        font-size: 22px;
+    }
+    .why .body {
+        width: 95%;
+        font-size: 14px;
+    }
+    .about-images {
+        margin: 0px auto;
+    }
+    .about-images .img {
+        width: 90%;
+    }
+    .asdf {
+        padding-left: 20%;
+    }
+    .about-images .img .img1 {
+        width: 180px;
+        height: 180px;
+    }
+    .about-images .img .content {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 769px) and (min-width: 561px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .intro {
+        padding: 80px 20px 0 15px;
+        font-size: 36px;
+        color: #ffffff;
+    }
+    .nav-link {
+        color: white;
+        border-bottom: 1px solid #0c2461;
+        margin: 20px 10px;
+        float: right;
+    }
+    .donate-btn {
+        margin-left: 20px;
+        padding: 10px 50px;
+        border-radius: 5px;
+    }
+    .home-bg {
+        padding: 20px 50px 150px 15px;
+    }
+    .request {
+        width: 24%;
+        padding: 20px;
+        float: left;
+        margin: 7px;
+    }
+    .request .sub {
+        font-size: 14px;
+    }
+    .newsletter {
+        width: 90%;
+        clear: both;
+        padding: 0px 10px 80px 10px;
+    }
+    .newsletter .contents {
+        width: 50%;
+        float: left;
+    }
+    .newsletter .contents .head {
+        font-size: 22px;
+        margin-top: 35px;
+        padding-left: 0;
+    }
+    .newsletter .contents .body {
+        font-size: 16px;
+        padding-left: 0;
+    }
+    .newsletter .form {
+        width: 50%;
+        float: left;
+    }
+    /* About */
+    .about {
+        width: 90%;
+        margin: 0px auto;
+        padding-bottom: 125px;
+    }
+    .about .intros {
+        width: 60%;
+        float: left;
+    }
+    .about .intros .head {
+        font-size: 26px;
+        text-align: center;
+    }
+    .about .intros .body {
+        font-size: 14px;
+        color: #413a3a;
+    }
+    .about .image {
+        width: 40%;
+        float: left;
+    }
+    .img {
+        width: 100%;
+        height: 220px;
+    }
+    .why {
+        padding-top: 30px;
+        clear: both;
+    }
+    .why .body {
+        font-size: 16px;
+    }
+    .about-images {
+        margin-top: -30px;
+        margin-bottom: 300px;
+    }
+    .about-images .img {
+        width: 50%;
+        margin-top: 50px;
+    }
+    .asdf {
+        padding-left: 70px;
+    }
+    .about-images .img .img1 {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+    }
+    .about-images .img .content {
+        font-size: 14px;
+        text-align: center;
+    }
+}
