@@ -1,0 +1,440 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.application {
+  width: 100%;
+}
+
+/* Navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:not(:first-child){
+  float: right;
+}
+
+.topnav a:hover {
+  /* background-color: #ddd; */
+  color: red;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Partners section */
+.Partners{
+  font-family:Roboto;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.Partners h3{
+  font-size:32px;
+}
+.partners-description {
+  font-size: 2vw;
+}
+
+.partners-description span {
+  color: #000000;
+}
+
+#HNG{
+  width:250px;
+  display: inline;
+  margin-top: 20px;
+}
+#Flutterwave{
+  width:250px;
+  display: inline;
+  margin-top: 20px;
+  margin-left: 45px;
+
+}
+#StartNG{
+  width:120px;
+  display: inline;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+
+@media screen and (max-width: 600px) {
+  .Partners {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+
+  .partner-images img {
+    margin: 0 auto;
+  }
+
+  .partner-images {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/* The team */
+.team-container {
+  background-color: rgb(246, 246, 246);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.team-container h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.team-lead img {
+  border-radius: 50%;
+  height: 105px;
+  margin: 10px;
+}
+
+.team-landing {
+  background-image: url("https://res.cloudinary.com/dqpoj0kcn/image/upload/c_crop,h_700,w_1440/v1567809410/adult-backlit-beach-1000445.jpg");
+  height: 500px;
+  background-attachment: fixed;
+}
+
+.team {
+  z-index: 900;
+}
+
+.the-team {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+}
+
+.team-lead {
+  margin: 15px;
+  border: 1px solid rgb(246, 246, 246);
+  background-color: white;
+  height: 270px;
+  width: 250px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.02);
+}
+.team-info {
+  margin-left: 10px;
+}
+
+.names {
+  font-family: sans-serif;
+  font-size: 18px;
+  margin: 15px;
+  font-style:
+}
+.team-division {
+  font-style: italic;
+}
+#more-team {
+  font-style: italic;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: rgb(246, 246, 246);
+  text-align: center;
+  width: 40px;
+  color: rgb(73, 72, 72);
+}
+.members {
+  margin-left: 200px;
+  margin-bottom: 2px;
+  margin-top: 43px;
+}
+
+
+/* Footer */
+footer {
+  background-color: rgb(246, 246, 246);
+}
+
+.info {
+  float: left;
+  margin-right: 100px;
+  margin-left: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.address {
+  height: 300px;
+  padding-top: 100px;
+}
+
+.address-top {
+  border-bottom: 1px solid #000000;
+  height: 80px;
+}
+
+.address-bottom {
+  padding-top: 30px;
+}
+
+
+/* Opportunity is waiting for you */
+.opportunity {
+  margin: 0;
+  padding: 0;
+}
+
+.column b {
+    font-size: 22px;
+}
+
+.column p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    display: table;
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 10px 0;
+}
+
+.column {
+    display: table-cell;
+    padding: 10px;
+    width: 33.33%;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 10px solid white;
+}
+
+
+.section-1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .column {
+        width: 95%;
+        display: block;
+        margin-left: 0;
+        border: none;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .column b {
+        font-size: 18px;
+    }
+
+    .column p {
+        font-size: 15px;
+    }
+    .section-1 {
+        font-size: 15px;
+    }
+}
+
+.column img {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* Payments page */
+
+.name-passport-container {
+  display: flex;
+  flex-direction: row;
+}
+.passport-container {
+  width: 25%;
+}
+
+#output {
+  width: 150px;
+  height: 150px
+}
+
+.name-passport {
+  margin-right: 10px;
+  width: 70%;
+}
+.name {
+  width: 100%;
+}
+input[type=text] {
+  width: 100%;
+  height: 2vw;
+}
+
+input[type=email] {
+  width: 100%;
+  height: 2vw;
+}
+
+.asterisk {
+  color: red;
+}
+
+form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.header {
+  text-align: center;
+  font-size: 3vw;
+}
+
+input[type=submit]{
+  padding: 10px;
+  border-radius: 3px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  border: none;
+}
+
+textarea {
+  width: 100%;
+}
+
+.the-rest {
+  padding-top: 50px;
+}
+
+input[type=submit]:hover {
+  background-color: #333
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+form {
+  width: 100%;
+}
+}
+
+/* About */
+
+.about-container {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.about-3 {
+  padding-left: 0;
+}
+
+.about-2{
+
+}
+
+.about-1{
+
+}
+
+@media screen and (max-width: 600px) {
+  .about-container {
+    width: 100%;
+  }
+
+  .about {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+/* Mobile Optimisation */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+@media screen and (max-width: 600px) {
+  .application {
+    width: 100%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
