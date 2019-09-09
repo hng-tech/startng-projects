@@ -4,18 +4,18 @@ A collection of projects from StartNG.
 All Team Projects are hosted on start.ng subdomains with the same name. 
 
 **Full List**
-* berlin.start.ng
-* delhi.start.ng
-* denver.start.ng
-* dubai.start.ng
-* helsinki.start.ng
-* kigali.start.ng
-* melbourne.start.ng
-* moscow.start.ng
-* nairobi.start.ng
-* oslo.start.ng
-* rio.start.ng
-* start.start.ng
-* stockholm.start.ng
-* tokyo.start.ng 
+* https://berlin.start.ng
+* https://delhi.start.ng
+* https://denver.start.ng
+* https://dubai.start.ng
+* https://helsinki.start.ng
+* https://kigali.start.ng
+* https://melbourne.start.ng
+* https://moscow.start.ng
+* https://nairobi.start.ng
+* https://oslo.start.ng
+* https://rio.start.ng
+* https://start.start.ng
+* https://stockholm.start.ng
+* https://tokyo.start.ng 
 
