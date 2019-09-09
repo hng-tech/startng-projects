@@ -1,2 +1,4 @@
-# startng-projects
-A collection of projects from StartNG
+# Minds&Souls Foundation
+Project website for #teamstockholm in the Start.NG program
+
+ui design pages and resources

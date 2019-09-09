@@ -1,0 +1,40 @@
+body{
+	
+	max-width: 800px;
+	width: 80%;
+	max-height: 800px;
+	height: 70%;
+	margin: 20px auto;
+	padding: 20px;
+	background: bisque;
+}
+section{
+	margin: 0 auto;
+	padding: 10px;
+	width: 70%;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+.surname{
+	
+	margin: 0 auto;
+	padding: 10px;
+}
+.firstName{
+	margin: 0 auto;
+	padding: 10px;
+}
+.email{
+	margin: 0 auto;
+	padding: 10px;
+}
+.state{
+	margin: 0 auto;
+	padding: 10px;
+}
+.vol{
+	margin: 0 auto;
+	padding: 10px;
+	color: beige;
+	font-family: sans-serif;
+}
